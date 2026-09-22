@@ -255,6 +255,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 .map-toolbar { position: absolute; top: 10px; right: 10px; z-index: 500; display: flex; flex-direction: column; gap: 6px; }
 .map-toolbar button { border: 1px solid var(--line); background: var(--surface); border-radius: var(--radius-sm); padding: 8px 10px; font-size: 13px; font-weight: 600; box-shadow: var(--shadow); cursor: pointer; }
 .map-offline { position: absolute; top: 10px; left: 10px; z-index: 500; background: var(--warn-bg); color: var(--warn-ink); border-radius: var(--radius-sm); padding: 6px 10px; font-size: 12px; box-shadow: var(--shadow); }
+.leaflet-tooltip.pin-label {
+  background: rgb(255 255 255 / 0.92); color: #1d2a2a; border: 0; border-radius: 6px; padding: 2px 6px;
+  font-family: var(--font); font-size: 11px; font-weight: 600; line-height: 1.3; box-shadow: 0 1px 3px rgb(0 0 0 / 0.25);
+  white-space: nowrap; pointer-events: none;
+}
+.leaflet-tooltip.pin-label::before { display: none; }
+.leaflet-container:not(.show-labels) .leaflet-tooltip.pin-label { display: none; }
 .leaflet-popup-content { font-family: var(--font); font-size: 14px; margin: 10px 12px; }
 .leaflet-popup-content b { display: block; margin-bottom: 2px; }
 .leaflet-popup-content-wrapper { border-radius: 10px; }

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { activityById } from '../data';
 import { AREA_LABEL, WEEKDAYS, WEEKDAY_LABEL } from '../data/schema';
 import { useApp } from '../lib/app-context';
@@ -9,6 +9,7 @@ import { CategoryChip, StatusChips } from './StatusChips';
 export function DetailSheet() {
   const { selectedId, closeDetail, openDetail, date, now, marks, distanceTo, originIsUser } = useApp();
   const activity = selectedId ? activityById[selectedId] : undefined;
+  const sheetRef = useRef<HTMLDivElement>(null);
 
   // Lock body scroll and close on Escape while open.
   useEffect(() => {
@@ -20,6 +21,58 @@ export function DetailSheet() {
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener('keydown', onKey);
+    };
+  }, [activity, closeDetail]);
+
+  // Swipe down to dismiss. Starts only when the sheet is scrolled to the top so
+  // normal content scrolling still works. Native listeners because React's
+  // touch events are passive and can't preventDefault the scroll.
+  useEffect(() => {
+    const el = sheetRef.current;
+    if (!el || !activity) return;
+    el.style.transform = '';
+    el.style.transition = '';
+    let startY = 0;
+    let dy = 0;
+    let dragging = false;
+    let fromTop = false;
+    const onStart = (e: TouchEvent) => {
+      startY = e.touches[0].clientY;
+      dy = 0;
+      dragging = false;
+      fromTop = el.scrollTop <= 0;
+      el.style.transition = 'none';
+    };
+    const onMove = (e: TouchEvent) => {
+      const y = e.touches[0].clientY - startY;
+      if (!dragging) {
+        if (fromTop && y > 8) dragging = true;
+        else return;
+      }
+      dy = Math.max(0, y);
+      el.style.transform = `translateY(${dy}px)`;
+      if (e.cancelable) e.preventDefault();
+    };
+    const onEnd = () => {
+      if (!dragging) return;
+      dragging = false;
+      el.style.transition = 'transform 200ms ease-out';
+      if (dy > 110) {
+        el.style.transform = 'translateY(100%)';
+        window.setTimeout(closeDetail, 180);
+      } else {
+        el.style.transform = '';
+      }
+    };
+    el.addEventListener('touchstart', onStart, { passive: true });
+    el.addEventListener('touchmove', onMove, { passive: false });
+    el.addEventListener('touchend', onEnd);
+    el.addEventListener('touchcancel', onEnd);
+    return () => {
+      el.removeEventListener('touchstart', onStart);
+      el.removeEventListener('touchmove', onMove);
+      el.removeEventListener('touchend', onEnd);
+      el.removeEventListener('touchcancel', onEnd);
     };
   }, [activity, closeDetail]);
 
@@ -35,8 +88,8 @@ export function DetailSheet() {
   return (
     <>
       <div className="sheet-backdrop" onClick={closeDetail} aria-hidden="true" />
-      <div className="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
-        <div className="grabber" />
+      <div className="sheet" ref={sheetRef} role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+        <div className="grabber" aria-hidden="true" />
         <button type="button" className="icon-btn close" onClick={closeDetail} aria-label="Close">
           ✕
         </button>

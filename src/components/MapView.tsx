@@ -6,6 +6,15 @@ import { CATEGORIES, CATEGORY_LABEL, type Category } from '../data/schema';
 import { useApp } from '../lib/app-context';
 import { isClosedOnDate } from '../lib/time';
 
+/** Zoom level at which pin labels appear. */
+const LABEL_ZOOM = 14;
+
+/** "Cahuita National Park — coastal trail" -> "Cahuita National Park"; keeps labels short. */
+function shortName(name: string): string {
+  const cut = name.split(/ — | \(/)[0].trim();
+  return cut.length > 28 ? `${cut.slice(0, 27)}…` : cut;
+}
+
 // Resolved hex colours (Leaflet paints SVG, so CSS vars can't be used directly).
 const CAT_HEX: Record<Category, string> = {
   eat: '#d9662f',
@@ -54,11 +63,23 @@ export function MapView() {
     tiles.on('tileload', () => setTileError(false));
     tiles.addTo(map);
 
+    // Several places share a pin (Sherman's boat, Maxi's and the DIY snorkel all
+    // sit on Manzanillo beach). Fan coincident markers out ~45 m in a ring and
+    // alternate label sides so every pin and label can be seen and tapped.
+    const seen = new Map<string, number>();
+    const SIDES: Array<'right' | 'left' | 'top' | 'bottom'> = ['right', 'left', 'top', 'bottom'];
     for (const a of activities) {
       const isLodging = lodgingIds.has(a.id);
       const closed = isClosedOnDate(a, date);
+      const key = `${a.lat.toFixed(3)},${a.lng.toFixed(3)}`;
+      const n = seen.get(key) ?? 0;
+      seen.set(key, n + 1);
+      const angle = (n * 2 * Math.PI) / 3;
+      const lat = n === 0 ? a.lat : a.lat + 0.0004 * Math.sin(angle);
+      const lng = n === 0 ? a.lng : a.lng + 0.0004 * Math.cos(angle);
+      const side = SIDES[n % SIDES.length];
       const marker = isLodging
-        ? L.marker([a.lat, a.lng], {
+        ? L.marker([lat, lng], {
             icon: L.divIcon({
               className: '',
               html: `<div style="width:26px;height:26px;border-radius:8px;background:#1d2a2a;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)">⌂</div>`,
@@ -67,20 +88,38 @@ export function MapView() {
             }),
             zIndexOffset: 1000,
           })
-        : L.circleMarker([a.lat, a.lng], {
+        : L.circleMarker([lat, lng], {
             radius: 9,
             color: '#fff',
             weight: 2,
             fillColor: CAT_HEX[a.category],
             fillOpacity: closed ? 0.45 : 0.95,
           });
-      marker.bindTooltip(a.name, { direction: 'top', offset: [0, -8] });
+      marker.bindTooltip(shortName(a.name), {
+        permanent: true,
+        direction: side,
+        offset:
+          side === 'right' ? [isLodging ? 14 : 10, 0]
+          : side === 'left' ? [isLodging ? -14 : -10, 0]
+          : side === 'top' ? [0, isLodging ? -14 : -10]
+          : [0, isLodging ? 14 : 10],
+        className: 'pin-label',
+        opacity: 1,
+        interactive: false,
+      });
       marker.on('click', () => openDetail(a.id));
       marker.addTo(map);
     }
 
     userLayer.current = L.layerGroup().addTo(map);
     mapRef.current = map;
+
+    // Labels only once zoomed in far enough to read them without overlap.
+    const updateLabels = () => {
+      map.getContainer().classList.toggle('show-labels', map.getZoom() >= LABEL_ZOOM);
+    };
+    map.on('zoomend', updateLabels);
+    updateLabels();
 
     return () => {
       map.remove();
