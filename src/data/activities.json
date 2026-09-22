@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "dragonfly",
+    "name": "Dragonfly Beach Retreat — Deluxe Casita",
+    "category": "town",
+    "area": "punta-uva",
+    "lat": 9.6395,
+    "lng": -82.6928,
+    "description": "Home base for Oct 5–6. Deluxe Casita, confirmation 4W9K5ZP4QB, paid in full.",
+    "highlights": [
+      "Check-in Oct 5 15:00, check-out Oct 7 11:00",
+      "100 m from Playa Arrecife and La Sirena",
+      "Ask about on-site couples massage and bikes"
+    ],
+    "notes": "Conf 4W9K5ZP4QB, paid in full. WhatsApp +506 6128 7817.",
+    "hours": {},
+    "timeOfDay": ["any"],
+    "bestDays": [],
+    "requiresBooking": false,
+    "booking": {
+      "method": "WhatsApp the retreat",
+      "phone": "+506 6128 7817",
+      "whatsapp": "50661287817"
+    },
+    "tags": ["lodging", "punta uva", "casita"]
+  },
+  {
+    "id": "congo-bongo",
+    "name": "Congo Bongo EcoVillage — Sweet Dream House",
+    "category": "town",
+    "area": "manzanillo",
+    "lat": 9.6322,
+    "lng": -82.659,
+    "description": "Home base for Oct 7–10. Sweet Dream House, locator 33643575, $419.51 due at the property.",
+    "highlights": [
+      "Office 07:00–16:00; after 16:00 keys are in the lockbox",
+      "Five minutes on foot to the Gandoca-Manzanillo refuge trail",
+      "Daan can book Sherman's boat directly"
+    ],
+    "notes": "Locator 33643575, $419.51 due at property. Office 07:00–16:00; after 16:00 keys in lockbox — confirm the code on WhatsApp. Daan Nelemans +506 8957 4177.",
+    "hours": {},
+    "timeOfDay": ["any"],
+    "bestDays": [],
+    "requiresBooking": false,
+    "booking": {
+      "method": "WhatsApp Daan Nelemans",
+      "phone": "+506 8957 4177",
+      "whatsapp": "50689574177"
+    },
+    "tags": ["lodging", "manzanillo", "eco"]
+  },
+  {
+    "id": "cahuita-walk",
+    "name": "Cahuita National Park — coastal trail",
+    "category": "nature",
+    "area": "cahuita",
+    "lat": 9.7309,
+    "lng": -82.8214,
+    "description": "Flat 8 km trail from Kelly Creek (Cahuita village) to Puerto Vargas along the beach and through jungle; the last stretch is a raised boardwalk.",
+    "highlights": [
+      "Sloths, howler and capuchin monkeys",
+      "Raccoons that raid bags",
+      "Punta Cahuita white-sand beach halfway"
+    ],
+    "notes": "On a transit day, walk 45–60 min in and turn around. Park in the paid lot by Kelly Creek and leave nothing visible — bags will be in the car.",
+    "hours": {
+      "mon": ["08:00", "16:00"],
+      "tue": ["08:00", "16:00"],
+      "wed": ["08:00", "16:00"],
+      "thu": ["08:00", "16:00"],
+      "fri": ["08:00", "16:00"],
+      "sat": ["08:00", "16:00"],
+      "sun": ["08:00", "16:00"]
+    },
+    "price": "Donation, $5–10 pp suggested",
+    "duration": "2–4 h",
+    "timeOfDay": ["early", "morning"],
+    "bestDays": ["2026-10-10", "2026-10-07"],
+    "requiresBooking": false,
+    "booking": {
+      "method": "None; guides at the Kelly Creek gate ~$25 pp"
+    },
+    "tags": ["hike", "sloths", "monkeys", "beach", "national park", "trail"],
+    "pairsWith": ["cahuita-snorkel", "cahuita-town"]
+  },
+  {
+    "id": "cahuita-snorkel",
+    "name": "Cahuita National Park — reef snorkel by boat",
+    "category": "water",
+    "area": "cahuita",
+    "lat": 9.7309,
+    "lng": -82.8214,
+    "description": "Ten-minute boat to two reef spots inside the park's 600-hectare marine zone, then a fruit break on Punta Cahuita beach.",
+    "highlights": [
+      "Costa Rica's largest Caribbean reef",
+      "Sea turtles, rays, nurse sharks on the sand, parrotfish",
+      "Sep–Oct is peak visibility"
+    ],
+    "notes": "Snorkeling here is guided-only. Conditions can cancel it the morning of — have the walk as plan B. Re-enter the park free after the boat. Tours at 08:15 and mid-morning.",
+    "hours": {
+      "mon": ["08:00", "12:00"],
+      "tue": ["08:00", "12:00"],
+      "wed": ["08:00", "12:00"],
+      "thu": ["08:00", "12:00"],
+      "fri": ["08:00", "12:00"],
+      "sat": ["08:00", "12:00"],
+      "sun": ["08:00", "12:00"]
+    },
+    "price": "$45–55 pp, gear + fruit included",
+    "duration": "2–2.5 h",
+    "timeOfDay": ["morning"],
+    "bestDays": ["2026-10-10", "2026-10-07"],
+    "requiresBooking": true,
+    "bookingLeadTime": "Book 24 h ahead",
+    "booking": {
+      "method": "Required — guided only. Cahuita Experience meets 08:15 at their shop; Wildlife Tours CR $45 + $20 pp optional pickup from Manzanillo; Green Cahuita on GetYourGuide ($49).",
+      "url": "https://cahuitaexperience.com"
+    },
+    "website": "https://wildlifetourscr.com",
+    "tags": ["snorkel", "reef", "boat", "turtles", "national park", "guided"],
+    "pairsWith": ["cahuita-walk", "cahuita-town"]
+  },
+  {
+    "id": "cahuita-town",
+    "name": "Cahuita village",
+    "category": "town",
+    "area": "cahuita",
+    "lat": 9.736,
+    "lng": -82.842,
+    "description": "Sleepy Afro-Caribbean village at the park gate: reggae bars, sodas serving rice-and-beans, one main street.",
+    "highlights": [
+      "Lunch after the park",
+      "The last Caribbean stop before Limón"
+    ],
+    "hours": {
+      "mon": ["00:00", "23:59"],
+      "tue": ["00:00", "23:59"],
+      "wed": ["00:00", "23:59"],
+      "thu": ["00:00", "23:59"],
+      "fri": ["00:00", "23:59"],
+      "sat": ["00:00", "23:59"],
+      "sun": ["00:00", "23:59"]
+    },
+    "duration": "1 h",
+    "timeOfDay": ["midday", "afternoon"],
+    "bestDays": ["2026-10-10"],
+    "requiresBooking": false,
+    "tags": ["village", "lunch", "soda", "caribbean", "reggae"],
+    "pairsWith": ["cahuita-walk", "cahuita-snorkel"]
+  },
+  {
+    "id": "manzanillo-refuge",
+    "name": "Gandoca-Manzanillo Wildlife Refuge trail",
+    "category": "nature",
+    "area": "manzanillo",
+    "lat": 9.6132,
+    "lng": -82.6519,
+    "description": "Trail from Manzanillo village south along cliffs to hidden coves; Playa Bite at ~1.5 km, Punta Mona at ~5 km.",
+    "highlights": [
+      "Sloths, howlers, poison-dart frogs",
+      "Clifftop viewpoint",
+      "Empty beaches for a swim"
+    ],
+    "notes": "Mud — real shoes. Five minutes on foot from Congo Bongo. A 06:30 start on Oct 10 still leaves time for Cahuita.",
+    "hours": {
+      "mon": ["06:30", "15:00"],
+      "tue": ["06:30", "15:00"],
+      "wed": ["06:30", "15:00"],
+      "thu": ["06:30", "15:00"],
+      "fri": ["06:30", "15:00"],
+      "sat": ["06:30", "15:00"],
+      "sun": ["06:30", "15:00"]
+    },
+    "price": "Donation",
+    "duration": "1.5–4 h",
+    "timeOfDay": ["early", "morning"],
+    "bestDays": ["2026-10-08", "2026-10-09", "2026-10-10"],
+    "requiresBooking": false,
+    "booking": {
+      "method": "Optional guide at the entrance (~$30–40 pp) or via Congo Bongo's Caribe Fun Tours link"
+    },
+    "tags": ["hike", "trail", "sloths", "frogs", "beach", "refuge", "walkable"],
+    "pairsWith": ["manzanillo-snorkel", "moca-beach", "maxis"]
+  },
+  {
+    "id": "sherman-boat",
+    "name": "Sherman's Boat Tour — dolphins, Punta Mona, snorkel",
+    "category": "water",
+    "area": "manzanillo",
+    "lat": 9.633,
+    "lng": -82.6555,
+    "description": "Launch from Manzanillo beach, search for bottlenose and tucuxi dolphins off Gandoca (~85–90% sighting), then a beach break at Punta Mona with snorkeling on the point when conditions allow.",
+    "highlights": [
+      "Punta Mona is boat-or-3-hour-hike only, so you have it nearly alone",
+      "Fresh fruit and pipa on the sand",
+      "The reef has reef sharks and gorges"
+    ],
+    "notes": "No pier — you climb in from the beach. Ask him to include the Punta Mona farm walk. Departures ~08:00 and ~13:00.",
+    "hours": {
+      "mon": ["07:30", "17:00"],
+      "tue": ["07:30", "17:00"],
+      "wed": ["07:30", "17:00"],
+      "thu": ["07:30", "17:00"],
+      "fri": ["07:30", "17:00"],
+      "sat": ["07:30", "17:00"],
+      "sun": ["07:30", "17:00"]
+    },
+    "price": "$85–110 pp",
+    "duration": "3–4 h",
+    "timeOfDay": ["morning"],
+    "bestDays": ["2026-10-08", "2026-10-09"],
+    "requiresBooking": true,
+    "bookingLeadTime": "Ask Daan the day before",
+    "booking": {
+      "method": "Required. Ask Daan at Congo Bongo to book Sherman directly; backup Rico Tico / Sulariwäk on GetYourGuide (meets by the Manzanillo soccer field).",
+      "phone": "+506 8957 4177",
+      "whatsapp": "50689574177"
+    },
+    "tags": ["boat", "dolphins", "snorkel", "punta mona", "beach", "guided"],
+    "pairsWith": ["punta-mona-farm", "maxis"]
+  },
+  {
+    "id": "punta-mona-farm",
+    "name": "Punta Mona permaculture farm",
+    "category": "culture",
+    "area": "manzanillo",
+    "lat": 9.6348,
+    "lng": -82.6308,
+    "description": "Hundred-acre off-grid farm behind Punta Mona beach.",
+    "highlights": [
+      "Fruit tasting from the orchard",
+      "The story of the place"
+    ],
+    "notes": "Do not plan a separate hike-in visit. Only reachable as an add-on to Sherman's boat.",
+    "hours": {},
+    "price": "Included in boat combos",
+    "duration": "1 h",
+    "timeOfDay": ["morning"],
+    "bestDays": ["2026-10-08"],
+    "requiresBooking": true,
+    "booking": {
+      "method": "Only as an add-on to Sherman's boat; standalone public visits appear dormant"
+    },
+    "tags": ["farm", "permaculture", "fruit", "off-grid", "add-on"],
+    "pairsWith": ["sherman-boat"]
+  },
+  {
+    "id": "punta-uva-kayak",
+    "name": "Río Punta Uva kayak + sloth walk",
+    "category": "water",
+    "area": "punta-uva",
+    "lat": 9.6395,
+    "lng": -82.6928,
+    "description": "Paddle up the river that meets the sea at Punta Uva point.",
+    "highlights": [
+      "Sloths, toucans, iguanas, turtles at water level",
+      "Guides add a short walk to the point lookout",
+      "Walking distance from Dragonfly"
+    ],
+    "notes": "Go at 08:00 for wildlife and before the wind. Rental is cash.",
+    "hours": {
+      "mon": ["08:00", "17:00"],
+      "tue": ["08:00", "17:00"],
+      "wed": ["08:00", "17:00"],
+      "thu": ["08:00", "17:00"],
+      "fri": ["08:00", "17:00"],
+      "sat": ["08:00", "17:00"],
+      "sun": ["08:00", "17:00"]
+    },
+    "price": "Rental ~$10 pp/h cash; guided ~$50–76 pp",
+    "duration": "1–2.5 h",
+    "timeOfDay": ["early", "morning"],
+    "bestDays": ["2026-10-06"],
+    "requiresBooking": false,
+    "bookingLeadTime": "WhatsApp the day before for 08:00",
+    "booking": {
+      "method": "Rental: Kayaks Punta Uva +506 8839 8386. Guided: Green Water Tours +506 6427 7088 (Playa Arrecife), Pachos Place +506 6009 1870.",
+      "phone": "+506 8839 8386",
+      "whatsapp": "50688398386"
+    },
+    "tags": ["kayak", "river", "sloths", "toucans", "wildlife", "walkable"],
+    "pairsWith": ["arrecife-snorkel", "la-sirena"]
+  },
+  {
+    "id": "arrecife-snorkel",
+    "name": "DIY snorkel at Playa Arrecife / Punta Uva point",
+    "category": "water",
+    "area": "punta-uva",
+    "lat": 9.6416,
+    "lng": -82.6883,
+    "description": "Shore snorkel around the rocks at the point on a calm morning.",
+    "highlights": [
+      "No boat, no guide, ten minutes from the casita",
+      "La Sirena lunch afterward"
+    ],
+    "notes": "Only worth it when the sea is flat.",
+    "hours": {
+      "mon": ["06:00", "17:30"],
+      "tue": ["06:00", "17:30"],
+      "wed": ["06:00", "17:30"],
+      "thu": ["06:00", "17:30"],
+      "fri": ["06:00", "17:30"],
+      "sat": ["06:00", "17:30"],
+      "sun": ["06:00", "17:30"]
+    },
+    "price": "Gear rental ~$5–10/day",
+    "duration": "1 h",
+    "timeOfDay": ["morning"],
+    "bestDays": ["2026-10-06"],
+    "requiresBooking": false,
+    "booking": {
+      "method": "Rent gear from Green Water Tours at Arrecife",
+      "phone": "+506 6427 7088",
+      "whatsapp": "50664277088"
+    },
+    "tags": ["snorkel", "diy", "beach", "reef", "walkable"],
+    "pairsWith": ["la-sirena", "punta-uva-kayak"]
+  },
+  {
+    "id": "manzanillo-snorkel",
+    "name": "DIY snorkel off Manzanillo beach",
+    "category": "water",
+    "area": "manzanillo",
+    "lat": 9.633,
+    "lng": -82.6555,
+    "description": "Shallow reef right in front of the village.",
+    "highlights": [
+      "Walk from Congo Bongo",
+      "No booking"
+    ],
+    "notes": "Calm mornings only.",
+    "hours": {
+      "mon": ["06:00", "17:30"],
+      "tue": ["06:00", "17:30"],
+      "wed": ["06:00", "17:30"],
+      "thu": ["06:00", "17:30"],
+      "fri": ["06:00", "17:30"],
+      "sat": ["06:00", "17:30"],
+      "sun": ["06:00", "17:30"]
+    },
+    "price": "Gear rental ~$5–10",
+    "duration": "1 h",
+    "timeOfDay": ["morning"],
+    "bestDays": ["2026-10-08", "2026-10-09"],
+    "requiresBooking": false,
+    "booking": {
+      "method": "Rent gear in the village"
+    },
+    "tags": ["snorkel", "diy", "beach", "reef", "walkable"],
+    "pairsWith": ["manzanillo-refuge", "maxis"]
+  },
+  {
+    "id": "jaguar-rescue",
+    "name": "Jaguar Rescue Center",
+    "category": "nature",
+    "area": "cocles",
+    "lat": 9.642,
+    "lng": -82.7236,
+    "description": "Wildlife rescue and rehab center in Cocles; small guided groups walk you past sloths, monkeys, toucans, snakes, with each animal's story.",
+    "highlights": [
+      "Guaranteed close sloths",
+      "Volunteers are excellent",
+      "Money goes to releases"
+    ],
+    "notes": "Bring repellent; tip the guide. Ten minutes from Dragonfly. Tours at 09:30 and 11:30.",
+    "hours": {
+      "mon": ["09:00", "13:00"],
+      "tue": ["09:00", "13:00"],
+      "wed": ["09:00", "13:00"],
+      "thu": ["09:00", "13:00"],
+      "fri": ["09:00", "13:00"],
+      "sat": ["09:00", "13:00"],
+      "sun": ["09:00", "13:00"]
+    },
+    "price": "~$24 pp",
+    "duration": "2 h",
+    "timeOfDay": ["morning"],
+    "bestDays": ["2026-10-07", "2026-10-06"],
+    "requiresBooking": false,
+    "booking": {
+      "method": "Walk in, or reserve online",
+      "phone": "+506 2750 0710",
+      "url": "https://jaguarrescue.foundation"
+    },
+    "website": "https://jaguarrescue.foundation",
+    "tags": ["sloths", "monkeys", "rescue", "wildlife", "guided", "toucans"],
+    "pairsWith": ["la-sirena", "sage-506", "pita-hummus"]
+  },
+  {
+    "id": "finca-two-waters",
+    "name": "Catarata Finca Two Waters",
+    "category": "nature",
+    "area": "hone-creek-bribri",
+    "lat": 9.6353,
+    "lng": -82.8147,
+    "description": "Two waterfalls on a family finca 2 km past Hone Creek on the Bribri road.",
+    "highlights": [
+      "Deep pool with a jump rock on the lower fall",
+      "Lookout over Puerto Viejo and the coast",
+      "Usually empty before 10:00"
+    ],
+    "notes": "1 km steep driveway (fine in the Vitara), then 20–30 min muddy downhill walk; bring water. Cash.",
+    "hours": {
+      "mon": ["08:00", "17:00"],
+      "tue": ["08:00", "17:00"],
+      "wed": ["08:00", "17:00"],
+      "thu": ["08:00", "17:00"],
+      "fri": ["08:00", "17:00"],
+      "sat": ["08:00", "17:00"],
+      "sun": ["08:00", "17:00"]
+    },
+    "price": "~$4 pp cash",
+    "duration": "1.5 h",
+    "timeOfDay": ["early", "morning"],
+    "bestDays": ["2026-10-09"],
+    "requiresBooking": false,
+    "tags": ["waterfall", "swim", "hike", "jump rock", "viewpoint", "cash"],
+    "pairsWith": ["cacao-trails", "kekoldi-cacao"],
+    "alternatives": ["catarata-ma-cu"]
+  },
+  {
+    "id": "catarata-ma-cu",
+    "name": "Catarata Ma-Cu (Bribri \"Sparkling\" waterfall)",
+    "category": "nature",
+    "area": "hone-creek-bribri",
+    "lat": 9.643,
+    "lng": -82.839,
+    "description": "Family-run falls halfway to Bribri.",
+    "highlights": [
+      "Ten-minute walk down",
+      "Welcoming family",
+      "Coffee and fruit included"
+    ],
+    "notes": "Steep and slippery; arrive early for parking at the house. Skip Volio — guided-only and security warnings.",
+    "hours": {
+      "mon": ["08:00", "17:00"],
+      "tue": ["08:00", "17:00"],
+      "wed": ["08:00", "17:00"],
+      "thu": ["08:00", "17:00"],
+      "fri": ["08:00", "17:00"],
+      "sat": ["08:00", "17:00"],
+      "sun": ["08:00", "17:00"]
+    },
+    "price": "₡2,500 pp, includes coffee and fruit",
+    "duration": "1 h",
+    "timeOfDay": ["early", "morning"],
+    "bestDays": ["2026-10-09"],
+    "requiresBooking": false,
+    "booking": {
+      "method": "None; drive up the family's driveway off Route 36"
+    },
+    "tags": ["waterfall", "swim", "family", "coffee", "bribri"],
+    "pairsWith": ["cacao-trails", "kekoldi-cacao"],
+    "alternatives": ["finca-two-waters"]
+  },
+  {
+    "id": "finca-la-isla",
+    "name": "Finca la Isla permaculture farm and botanical garden",
+    "category": "nature",
+    "area": "puerto-viejo",
+    "lat": 9.6495,
+    "lng": -82.7641,
+    "description": "Spice, fruit, and medicinal-plant garden on the Playa Negra side of Puerto Viejo.",
+    "highlights": [
+      "Vanilla, nutmeg, cinnamon",
+      "Fruit tasting at the end",
+      "Red poison-dart frogs, sloths and toucans on the property"
+    ],
+    "notes": "Mud shoes; signs on the self-guided route are faded, so a guide is worth it. Closed Tue–Thu.",
+    "hours": {
+      "mon": ["10:00", "16:00"],
+      "tue": null,
+      "wed": null,
+      "thu": null,
+      "fri": ["10:00", "16:00"],
+      "sat": ["10:00", "16:00"],
+      "sun": ["10:00", "16:00"]
+    },
+    "price": "~$8 self-guided; guided by arrangement",
+    "duration": "1.5–2 h",
+    "timeOfDay": ["midday", "afternoon"],
+    "bestDays": ["2026-10-09", "2026-10-05"],
+    "requiresBooking": false,
+    "bookingLeadTime": "Call a day ahead for a guided walk",
+    "booking": {
+      "method": "Call a day ahead for a guided walk",
+      "phone": "+506 8886 8530",
+      "whatsapp": "50688868530"
+    },
+    "tags": ["garden", "farm", "spices", "fruit", "frogs", "sloths", "botanical"],
+    "pairsWith": ["grow", "bread-what-what", "la-nena"]
+  },
+  {
+    "id": "cacao-trails",
+    "name": "Cacao Trails — Museo de Cacao",
+    "category": "culture",
+    "area": "hone-creek-bribri",
+    "lat": 9.6746,
+    "lng": -82.8048,
+    "description": "Working cacao garden and small museum at Hone Creek.",
+    "highlights": [
+      "Bean-to-bar walk",
+      "Bribri history",
+      "Wildlife on the property",
+      "You make and taste the chocolate at the end"
+    ],
+    "notes": "Ten minutes from the Two Waters turnoff.",
+    "hours": {
+      "mon": ["08:00", "16:00"],
+      "tue": ["08:00", "16:00"],
+      "wed": ["08:00", "16:00"],
+      "thu": ["08:00", "16:00"],
+      "fri": ["08:00", "16:00"],
+      "sat": ["08:00", "16:00"],
+      "sun": ["08:00", "16:00"]
+    },
+    "price": "~$30–35 pp",
+    "duration": "2 h",
+    "timeOfDay": ["morning", "midday"],
+    "bestDays": ["2026-10-09"],
+    "requiresBooking": false,
+    "booking": {
+      "method": "WhatsApp; ask for Daniel",
+      "phone": "+506 8353 8455",
+      "whatsapp": "50683538455"
+    },
+    "tags": ["chocolate", "cacao", "museum", "bribri", "history"],
+    "pairsWith": ["finca-two-waters", "catarata-ma-cu", "finca-la-isla"],
+    "alternatives": ["kekoldi-cacao"]
+  },
+  {
+    "id": "kekoldi-cacao",
+    "name": "Kekoldi indigenous family — cacao and exotic animals",
+    "category": "culture",
+    "area": "hone-creek-bribri",
+    "lat": 9.6357,
+    "lng": -82.7811,
+    "description": "Small Bribri family operation near Hone Creek: the whole cacao process through to a thick chocolate drink, plus the animals they keep.",
+    "highlights": [
+      "Personal, few visitors"
+    ],
+    "notes": "Only two public reviews — confirm by phone before driving. Spanish.",
+    "hours": {},
+    "price": "Ask",
+    "duration": "2 h",
+    "timeOfDay": ["morning"],
+    "bestDays": ["2026-10-09"],
+    "requiresBooking": true,
+    "bookingLeadTime": "Confirm by phone before driving",
+    "booking": {
+      "method": "Call/WhatsApp (Spanish)",
+      "phone": "+506 8580 5253",
+      "whatsapp": "50685805253"
+    },
+    "tags": ["chocolate", "cacao", "bribri", "indigenous", "animals", "family"],
+    "pairsWith": ["finca-two-waters", "catarata-ma-cu"],
+    "alternatives": ["cacao-trails", "kekoldi-reserve-tour"]
+  },
+  {
+    "id": "kekoldi-reserve-tour",
+    "name": "Kekoldi Reserve — chocolate + waterfall tour (backup)",
+    "category": "culture",
+    "area": "hone-creek-bribri",
+    "lat": 9.6357,
+    "lng": -82.7811,
+    "description": "Guided version if the family doesn't answer: iguana conservation project, medicinal plants, chocolate, waterfall swim, Caribbean lunch.",
+    "highlights": [
+      "Iguana conservation project",
+      "Medicinal plants and chocolate",
+      "Waterfall swim and Caribbean lunch"
+    ],
+    "notes": "Tours ~08:00. Backup only if kekoldi-cacao doesn't answer.",
+    "hours": {
+      "mon": ["08:00", "14:00"],
+      "tue": ["08:00", "14:00"],
+      "wed": ["08:00", "14:00"],
+      "thu": ["08:00", "14:00"],
+      "fri": ["08:00", "14:00"],
+      "sat": ["08:00", "14:00"],
+      "sun": ["08:00", "14:00"]
+    },
+    "price": "From ~$75 pp",
+    "duration": "4–6 h",
+    "timeOfDay": ["morning"],
+    "bestDays": ["2026-10-09"],
+    "requiresBooking": true,
+    "bookingLeadTime": "Book online the day before",
+    "booking": {
+      "method": "Viator / Musement \"Indigenous Reserve Chocolate and Waterfalls\"",
+      "url": "https://www.viator.com/searchResults/all?text=Kekoldi%20Indigenous%20Reserve%20Chocolate%20and%20Waterfalls"
+    },
+    "tags": ["chocolate", "waterfall", "guided", "bribri", "iguana", "backup"],
+    "alternatives": ["kekoldi-cacao", "cacao-trails"]
+  },
+  {
+    "id": "beauty-ritual-spa",
+    "name": "Masajes Beauty Ritual Spa — couples massage",
+    "category": "wellness",
+    "area": "cocles",
+    "lat": 9.6377,
+    "lng": -82.7267,
+    "description": "Cocles studio on Calle Ole Caribe, 5.0★ from 110 reviews.",
+    "highlights": [
+      "Couples room",
+      "Foot bath and cold chocolate on arrival",
+      "Chocolate facial at the end",
+      "Reviewers call it the best massage of their trip"
+    ],
+    "notes": "Ask about a beach setup vs. studio. Same street as Zaika — pair them.",
+    "hours": {
+      "mon": ["08:00", "21:00"],
+      "tue": ["08:00", "21:00"],
+      "wed": ["08:00", "21:00"],
+      "thu": ["08:00", "21:00"],
+      "fri": ["08:00", "21:00"],
+      "sat": ["08:00", "21:00"],
+      "sun": ["08:00", "21:00"]
+    },
+    "price": "~$70 pp / 70 min",
+    "duration": "1.5 h",
+    "timeOfDay": ["afternoon", "evening"],
+    "bestDays": ["2026-10-06", "2026-10-08"],
+    "requiresBooking": true,
+    "bookingLeadTime": "WhatsApp a day ahead",
+    "booking": {
+      "method": "WhatsApp",
+      "phone": "+506 8314 8943",
+      "whatsapp": "50683148943"
+    },
+    "tags": ["massage", "spa", "couples", "chocolate", "relax"],
+    "pairsWith": ["zaika"]
+  },
+  {
+    "id": "la-sirena",
+    "name": "La Sirena",
+    "category": "eat",
+    "area": "punta-uva",
+    "lat": 9.6416,
+    "lng": -82.6883,
+    "description": "On Playa Arrecife, 100 m from Dragonfly. Lunch on a tray on the sand.",
+    "highlights": [
+      "Peruvian-style ceviche (fish or vegetarian)",
+      "Catch of the day in white-wine chimichurri butter",
+      "Spicy shrimp",
+      "They hand you a tray to eat on the sand"
+    ],
+    "notes": "Lunch only. Closed Sunday.",
+    "hours": {
+      "mon": ["11:00", "17:00"],
+      "tue": ["11:00", "17:00"],
+      "wed": ["11:00", "17:00"],
+      "thu": ["11:00", "17:00"],
+      "fri": ["11:00", "17:00"],
+      "sat": ["11:00", "17:00"],
+      "sun": null
+    },
+    "price": "$$",
+    "timeOfDay": ["midday"],
+    "bestDays": ["2026-10-06"],
+    "requiresBooking": false,
+    "tags": ["lunch", "ceviche", "seafood", "beach", "walkable", "peruvian"],
+    "pairsWith": ["arrecife-snorkel", "punta-uva-kayak", "jaguar-rescue"]
+  },
+  {
+    "id": "la-nena",
+    "name": "La NENA",
+    "category": "eat",
+    "area": "cocles",
+    "lat": 9.6446,
+    "lng": -82.73,
+    "description": "Roadside Caribbean in Cocles.",
+    "highlights": [
+      "Chicken thighs with coconut rice-and-beans",
+      "Oxtail",
+      "Shrimp rice",
+      "House hot sauce"
+    ],
+    "notes": "Closed Tue and Wed — Monday night is the natural slot. Vegetarian options are thin.",
+    "hours": {
+      "mon": ["12:00", "20:30"],
+      "tue": null,
+      "wed": null,
+      "thu": ["12:00", "20:30"],
+      "fri": ["12:00", "20:30"],
+      "sat": ["12:00", "20:30"],
+      "sun": ["12:00", "20:30"]
+    },
+    "price": "$$",
+    "timeOfDay": ["midday", "evening"],
+    "bestDays": ["2026-10-05", "2026-10-08", "2026-10-09"],
+    "requiresBooking": false,
+    "tags": ["dinner", "caribbean", "rice and beans", "oxtail", "local"],
+    "pairsWith": ["finca-la-isla"]
+  },
+  {
+    "id": "zaika",
+    "name": "Zaika Indian Cuisine Bar & Grill",
+    "category": "eat",
+    "area": "cocles",
+    "lat": 9.6431,
+    "lng": -82.7261,
+    "description": "Open-kitchen Indian on Calle Ole Caribe.",
+    "highlights": [
+      "Mixed grill",
+      "Fish curry",
+      "Shahi paneer",
+      "Real heat on request, vegan-friendly"
+    ],
+    "notes": "Next to the spa. Closed Sunday.",
+    "hours": {
+      "mon": ["12:00", "22:00"],
+      "tue": ["12:00", "22:00"],
+      "wed": ["12:00", "22:00"],
+      "thu": ["12:00", "22:00"],
+      "fri": ["12:00", "22:00"],
+      "sat": ["12:00", "22:00"],
+      "sun": null
+    },
+    "price": "$$",
+    "timeOfDay": ["evening"],
+    "bestDays": ["2026-10-06", "2026-10-08"],
+    "requiresBooking": false,
+    "tags": ["dinner", "indian", "curry", "vegan", "spicy"],
+    "pairsWith": ["beauty-ritual-spa"]
+  },
+  {
+    "id": "pita-hummus",
+    "name": "Pita & Hummus House",
+    "category": "eat",
+    "area": "cocles",
+    "lat": 9.6444,
+    "lng": -82.7337,
+    "description": "Family Lebanese on Route 256.",
+    "highlights": [
+      "Homemade falafel, tabbouleh, lamb kebab",
+      "Mojitos",
+      "Strong vegan options",
+      "Parking on site"
+    ],
+    "notes": "Closed Sunday.",
+    "hours": {
+      "mon": ["07:00", "21:00"],
+      "tue": ["07:00", "21:00"],
+      "wed": ["07:00", "21:00"],
+      "thu": ["07:00", "21:00"],
+      "fri": ["07:00", "21:00"],
+      "sat": ["07:00", "21:00"],
+      "sun": null
+    },
+    "price": "$$",
+    "timeOfDay": ["midday", "evening"],
+    "bestDays": ["2026-10-07", "2026-10-08"],
+    "requiresBooking": false,
+    "tags": ["lunch", "dinner", "lebanese", "falafel", "vegan", "parking"],
+    "pairsWith": ["jaguar-rescue"]
+  },
+  {
+    "id": "sage-506",
+    "name": "SAGE @ Playa 506",
+    "category": "eat",
+    "area": "cocles",
+    "lat": 9.6499,
+    "lng": -82.7363,
+    "description": "Beer garden built around a tree on Playa Cocles, sand floor, hammocks.",
+    "highlights": [
+      "The setting",
+      "Avocado toast and juices at breakfast",
+      "A place to sit on the beach with a drink"
+    ],
+    "notes": "Food reviews are mixed — go for the spot.",
+    "hours": {
+      "mon": ["08:00", "21:00"],
+      "tue": ["08:00", "21:00"],
+      "wed": ["08:00", "21:00"],
+      "thu": ["08:00", "21:00"],
+      "fri": ["08:00", "21:00"],
+      "sat": ["08:00", "21:00"],
+      "sun": ["08:00", "21:00"]
+    },
+    "price": "$$",
+    "timeOfDay": ["any"],
+    "bestDays": ["2026-10-07"],
+    "requiresBooking": false,
+    "tags": ["beach", "drinks", "breakfast", "hammocks", "beer garden", "cocles"],
+    "pairsWith": ["jaguar-rescue", "beauty-ritual-spa"]
+  },
+  {
+    "id": "grow",
+    "name": "Grow Puerto Viejo",
+    "category": "eat",
+    "area": "puerto-viejo",
+    "lat": 9.6578,
+    "lng": -82.7553,
+    "description": "Vegetarian/vegan on the Puerto Viejo waterfront.",
+    "highlights": [
+      "Mushroom tacos",
+      "Falafel salad",
+      "Carrot-lox bruschetta",
+      "Smoothies, sea view"
+    ],
+    "notes": "Closed Sunday.",
+    "hours": {
+      "mon": ["12:00", "21:00"],
+      "tue": ["12:00", "21:00"],
+      "wed": ["12:00", "21:00"],
+      "thu": ["12:00", "21:00"],
+      "fri": ["12:00", "21:00"],
+      "sat": ["12:00", "21:00"],
+      "sun": null
+    },
+    "price": "$$",
+    "timeOfDay": ["midday", "evening"],
+    "bestDays": ["2026-10-09"],
+    "requiresBooking": false,
+    "tags": ["dinner", "lunch", "vegan", "vegetarian", "sea view", "waterfront"],
+    "pairsWith": ["finca-la-isla", "bread-what-what"]
+  },
+  {
+    "id": "rios-vegan",
+    "name": "Rios Vegan Food",
+    "category": "eat",
+    "area": "puerto-viejo",
+    "lat": 9.6566,
+    "lng": -82.7545,
+    "description": "Tiny vegan counter in Puerto Viejo.",
+    "highlights": [
+      "Hand-pie empanadas (~₡1,800; lentil bolognese, Indian-spiced)",
+      "Croissants",
+      "Banana cake"
+    ],
+    "notes": "Takeout — grab for a hike. Sat 07:00–12:00 only; closed Sunday.",
+    "hours": {
+      "mon": ["08:00", "16:00"],
+      "tue": ["08:00", "16:00"],
+      "wed": ["08:00", "16:00"],
+      "thu": ["08:00", "16:00"],
+      "fri": ["08:00", "16:00"],
+      "sat": ["07:00", "12:00"],
+      "sun": null
+    },
+    "price": "$",
+    "timeOfDay": ["morning", "midday"],
+    "bestDays": ["2026-10-09"],
+    "requiresBooking": false,
+    "tags": ["vegan", "takeout", "empanadas", "bakery", "trail snack"],
+    "pairsWith": ["finca-two-waters", "catarata-ma-cu", "bread-what-what"]
+  },
+  {
+    "id": "bread-what-what",
+    "name": "bread what what",
+    "category": "eat",
+    "area": "puerto-viejo",
+    "lat": 9.659,
+    "lng": -82.7493,
+    "description": "Puerto Viejo brunch café.",
+    "highlights": [
+      "Huge sandwiches, banana waffles, açaí",
+      "No-sugar juices, strong coffee",
+      "Sloths sometimes visible from the tables"
+    ],
+    "notes": "Closed Tuesday. Closes 15:00 on weekdays, 16:00 on weekends.",
+    "hours": {
+      "mon": ["08:00", "15:00"],
+      "tue": null,
+      "wed": ["08:00", "15:00"],
+      "thu": ["08:00", "15:00"],
+      "fri": ["08:00", "15:00"],
+      "sat": ["08:00", "16:00"],
+      "sun": ["08:00", "16:00"]
+    },
+    "price": "$$",
+    "timeOfDay": ["morning"],
+    "bestDays": ["2026-10-09"],
+    "requiresBooking": false,
+    "tags": ["breakfast", "brunch", "coffee", "café", "waffles", "sandwiches"],
+    "pairsWith": ["rios-vegan", "finca-la-isla", "grow"]
+  },
+  {
+    "id": "moca-beach",
+    "name": "Moca Beach Restaurant",
+    "category": "eat",
+    "area": "manzanillo",
+    "lat": 9.6324,
+    "lng": -82.6727,
+    "description": "Jungle-hotel restaurant 2 km before Manzanillo with a path to its own beach.",
+    "highlights": [
+      "Casados, octopus, chicken patacones",
+      "Coconut flan, cocktails",
+      "Monkeys on the beach path"
+    ],
+    "notes": "Carry cash — the card machine is unreliable. Sat closes 17:00.",
+    "hours": {
+      "mon": ["07:00", "21:00"],
+      "tue": ["07:00", "21:00"],
+      "wed": ["07:00", "21:00"],
+      "thu": ["07:00", "21:00"],
+      "fri": ["07:00", "21:00"],
+      "sat": ["09:00", "17:00"],
+      "sun": ["07:00", "21:00"]
+    },
+    "price": "$$",
+    "timeOfDay": ["any"],
+    "bestDays": ["2026-10-07", "2026-10-08", "2026-10-09"],
+    "requiresBooking": false,
+    "tags": ["lunch", "dinner", "casado", "beach", "cocktails", "cash"],
+    "pairsWith": ["manzanillo-refuge", "manzanillo-snorkel"]
+  },
+  {
+    "id": "maxis",
+    "name": "Maxi's Restaurant (Manzanillo)",
+    "category": "eat",
+    "area": "manzanillo",
+    "lat": 9.633,
+    "lng": -82.6558,
+    "description": "The village institution by the beach — whole red snapper, lobster, rondón.",
+    "highlights": [
+      "Whole red snapper, lobster, rondón",
+      "Walkable from Congo Bongo, so no driving after drinks"
+    ],
+    "hours": {
+      "mon": ["11:00", "21:00"],
+      "tue": ["11:00", "21:00"],
+      "wed": ["11:00", "21:00"],
+      "thu": ["11:00", "21:00"],
+      "fri": ["11:00", "21:00"],
+      "sat": ["11:00", "21:00"],
+      "sun": ["11:00", "21:00"]
+    },
+    "price": "$$",
+    "timeOfDay": ["evening"],
+    "bestDays": ["2026-10-08", "2026-10-09"],
+    "requiresBooking": false,
+    "tags": ["dinner", "seafood", "snapper", "lobster", "rondón", "walkable"],
+    "pairsWith": ["sherman-boat", "manzanillo-refuge", "manzanillo-snorkel"]
+  },
+  {
+    "id": "el-dragon",
+    "name": "Restaurante El Dragon — Asian cuisine & Kung Fu Bar",
+    "category": "eat",
+    "area": "puerto-viejo",
+    "lat": 9.657,
+    "lng": -82.75,
+    "description": "Pan-Asian dinner spot on the coast road just past Salsa Brava in Puerto Viejo, with cocktails and kung-fu movies playing in the bar. 4.7★ on Tripadvisor.",
+    "highlights": [
+      "Handmade dumplings and gyoza (veggie ones are the favorite)",
+      "Pad Thai reviewers call the best of their trip",
+      "Fried rice, edamame, sweet-chili veggies",
+      "Vegetarian dishes made vegan on request"
+    ],
+    "notes": "Dinner only, opens ~17:00. 200 m south of Super Diamante, after Salsa Brava, left side. Pin and hours are from web listings, not verified on the ground — confirm by phone. Small room; go early.",
+    "hours": {
+      "mon": ["17:00", "22:00"],
+      "tue": ["17:00", "22:00"],
+      "wed": ["17:00", "22:00"],
+      "thu": ["17:00", "22:00"],
+      "fri": ["17:00", "22:00"],
+      "sat": ["17:00", "22:00"],
+      "sun": ["17:00", "22:00"]
+    },
+    "price": "$$",
+    "timeOfDay": ["evening"],
+    "bestDays": ["2026-10-05", "2026-10-09"],
+    "requiresBooking": false,
+    "booking": {
+      "method": "Walk in; call to confirm hours",
+      "phone": "+506 6095 4940",
+      "whatsapp": "50660954940"
+    },
+    "website": "https://www.instagram.com/thedragon.pv/",
+    "tags": ["dinner", "asian", "thai", "chinese", "dumplings", "vegan", "cocktails", "puerto viejo"],
+    "pairsWith": ["finca-la-isla", "bread-what-what"],
+    "alternatives": ["umi-rojo", "grow", "la-nena"]
+  },
+  {
+    "id": "umi-rojo",
+    "name": "Umi Rojo Beach House (ex-Chile Rojo)",
+    "category": "eat",
+    "area": "puerto-viejo",
+    "lat": 9.6581,
+    "lng": -82.7532,
+    "description": "Oceanfront Thai–Japanese fusion with a sushi bar on Puerto Viejo's main street, next to KOKi Beach. Appears to be the long-running Chile Rojo under a new name.",
+    "highlights": [
+      "Sushi rolls and sampler platters with local fish",
+      "Thai seafood soup, sea bass in shrimp-coconut sauce",
+      "Handmade gyoza, Korean wings, dynamite shrimp",
+      "Strong vegan and gluten-free menu",
+      "2-for-1 cocktail promo most nights"
+    ],
+    "notes": "Chile Rojo hours were: closed Tue, dinner-only weekdays, lunch too Sat & Sun. Hours may have changed with the rebrand — call first. Skip the Monday all-you-can-eat buffet night: quality and wait times drop. Main-street location, no dedicated parking.",
+    "hours": {
+      "mon": ["17:00", "22:00"],
+      "tue": null,
+      "wed": ["17:00", "22:00"],
+      "thu": ["17:00", "23:00"],
+      "fri": ["17:00", "23:00"],
+      "sat": ["12:00", "23:00"],
+      "sun": ["12:00", "23:00"]
+    },
+    "price": "$$",
+    "timeOfDay": ["evening"],
+    "bestDays": ["2026-10-09"],
+    "requiresBooking": false,
+    "booking": {
+      "method": "Walk in; call to confirm hours and name",
+      "phone": "+506 2750 0421"
+    },
+    "website": "https://www.facebook.com/p/Chile-Rojo-100063453198523/",
+    "tags": ["dinner", "sushi", "thai", "japanese", "seafood", "vegan", "oceanfront", "puerto viejo"],
+    "pairsWith": ["finca-la-isla", "grow"],
+    "alternatives": ["el-dragon", "grow"]
+  },
+  {
+    "id": "spicy-coconut",
+    "name": "Spicy Coconut",
+    "category": "eat",
+    "area": "playa-chiquita",
+    "lat": 9.6435,
+    "lng": -82.7225,
+    "description": "Beachfront Caribbean-fusion restaurant and cocktail terrace inside Hotel Villas del Caribe in Playa Chiquita, directly across the road from the Jaguar Rescue Center. 4.5★ from 159 reviews.",
+    "highlights": [
+      "Poke bowls, Thai coconut curry, coconut shrimp",
+      "Spicy ceviche and avocado lomito tacos",
+      "Polynesian hot wings, margaritas at sunset",
+      "Sloths in the almond tree over the terrace",
+      "Small boutique of local handmade goods"
+    ],
+    "notes": "Lunch and dinner, 12:30–21:30; closed days not published — call to confirm. Busy on weekend nights; reserve by phone. Hotel parking. The natural lunch after the 09:30 Jaguar Rescue tour.",
+    "hours": {
+      "mon": ["12:30", "21:30"],
+      "tue": ["12:30", "21:30"],
+      "wed": ["12:30", "21:30"],
+      "thu": ["12:30", "21:30"],
+      "fri": ["12:30", "21:30"],
+      "sat": ["12:30", "21:30"],
+      "sun": ["12:30", "21:30"]
+    },
+    "price": "$$",
+    "timeOfDay": ["midday", "evening"],
+    "bestDays": ["2026-10-06", "2026-10-07"],
+    "requiresBooking": false,
+    "bookingLeadTime": "Reserve by phone for weekend dinners",
+    "booking": {
+      "method": "Reservations by phone",
+      "phone": "+506 2201 7849",
+      "url": "https://spicy-coconut.com/"
+    },
+    "website": "https://spicy-coconut.com/",
+    "tags": ["lunch", "dinner", "caribbean", "fusion", "poke", "cocktails", "beachfront", "vegan", "sloths"],
+    "pairsWith": ["jaguar-rescue", "beauty-ritual-spa"],
+    "alternatives": ["la-sirena", "sage-506", "pita-hummus"]
+  }
+]

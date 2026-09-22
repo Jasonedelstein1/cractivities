@@ -1,0 +1,193 @@
+[
+  {
+    "date": "2026-10-05",
+    "lodgingId": "dragonfly",
+    "anchors": [
+      {
+        "time": "12:40",
+        "title": "Land Limón (Sansa RZ1102)",
+        "note": "Limón International Airport (LIO)."
+      },
+      {
+        "time": "13:30",
+        "title": "Adobe Rent a Car pickup",
+        "note": "Bring passport, license, Fidelity card, ARCDW pages.",
+        "phone": "+506 2758 4042"
+      },
+      {
+        "time": "15:00",
+        "title": "Dragonfly check-in",
+        "note": "~1h15 drive from Limón. Conf 4W9K5ZP4QB, paid in full.",
+        "phone": "+506 6128 7817",
+        "whatsapp": "50661287817"
+      }
+    ],
+    "optionSets": [
+      {
+        "name": "Land and float",
+        "blurb": "Arrive, swim at Punta Uva beach, dinner at La NENA — the only night it's open before Thursday. El Dragon in town is the backup if you land hungry for Asian.",
+        "activityIds": ["la-nena", "el-dragon"]
+      },
+      {
+        "name": "Stretch the legs",
+        "blurb": "Finca la Isla on the way through Puerto Viejo (open Mon until 16:00 — tight after a 15:00 check-in, only if the car pickup is fast), then dinner at La NENA.",
+        "activityIds": ["finca-la-isla", "la-nena"]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "lodgingId": "dragonfly",
+    "anchors": [],
+    "optionSets": [
+      {
+        "name": "Water day",
+        "blurb": "Kayak at 08:00, snorkel the point, lunch on the sand at La Sirena, couples massage at 16:00, dinner at Zaika.",
+        "activityIds": ["punta-uva-kayak", "arrecife-snorkel", "la-sirena", "beauty-ritual-spa", "zaika"]
+      },
+      {
+        "name": "Sloths first",
+        "blurb": "Jaguar Rescue 09:30 tour, lunch at Spicy Coconut across the road (or back to La Sirena), afternoon kayak, dinner at Zaika or Pita & Hummus.",
+        "activityIds": ["jaguar-rescue", "spicy-coconut", "la-sirena", "punta-uva-kayak", "zaika", "pita-hummus"]
+      },
+      {
+        "name": "Slow day",
+        "blurb": "Bikes from Dragonfly to Playa Chiquita and Cocles, SAGE for a beach afternoon, massage, dinner at Zaika.",
+        "activityIds": ["sage-506", "beauty-ritual-spa", "zaika"]
+      }
+    ],
+    "warnings": ["La NENA is closed today (Tue)."]
+  },
+  {
+    "date": "2026-10-07",
+    "lodgingId": "congo-bongo",
+    "anchors": [
+      {
+        "time": "11:00",
+        "title": "Dragonfly checkout",
+        "phone": "+506 6128 7817",
+        "whatsapp": "50661287817"
+      },
+      {
+        "time": "16:00",
+        "title": "Congo Bongo office closes",
+        "note": "~10 min drive from Dragonfly. After 16:00 keys are in the lockbox — confirm the code with Daan.",
+        "phone": "+506 8957 4177",
+        "whatsapp": "50689574177"
+      }
+    ],
+    "optionSets": [
+      {
+        "name": "Cocles morning",
+        "blurb": "Jaguar Rescue 09:30 (if not done Tue), lunch at Spicy Coconut, SAGE or Pita & Hummus, check in, dinner at Moca Beach.",
+        "activityIds": ["jaguar-rescue", "spicy-coconut", "sage-506", "pita-hummus", "moca-beach"]
+      },
+      {
+        "name": "Cahuita today instead of Saturday",
+        "blurb": "Leave 07:15, snorkel at 08:15 and/or the coastal walk, lunch in Cahuita village, 50 min south to Congo Bongo before 16:00, dinner at Moca Beach. Frees Saturday for a slow morning.",
+        "activityIds": ["cahuita-snorkel", "cahuita-walk", "cahuita-town", "moca-beach"]
+      },
+      {
+        "name": "Straight to Manzanillo",
+        "blurb": "Check in early, short walk in the refuge (closes 15:00), swim, dinner at Moca Beach.",
+        "activityIds": ["manzanillo-refuge", "moca-beach"]
+      }
+    ],
+    "warnings": ["La NENA is closed today (Wed)."]
+  },
+  {
+    "date": "2026-10-08",
+    "lodgingId": "congo-bongo",
+    "anchors": [],
+    "optionSets": [
+      {
+        "name": "Boat day",
+        "blurb": "Sherman's boat at 08:00 with the Punta Mona farm add-on, slow afternoon, dinner at Pita & Hummus (25 min) or walk to Maxi's.",
+        "activityIds": ["sherman-boat", "punta-mona-farm", "pita-hummus", "maxis"]
+      },
+      {
+        "name": "Hike day",
+        "blurb": "Refuge trail to Playa Bite or Punta Mona from 06:30, snorkel off the village on the way back, lunch at Moca Beach, massage late afternoon, dinner at Zaika.",
+        "activityIds": ["manzanillo-refuge", "manzanillo-snorkel", "moca-beach", "beauty-ritual-spa", "zaika"]
+      },
+      {
+        "name": "Do both",
+        "blurb": "Boat at 08:00, short refuge walk after lunch — be back by 15:00.",
+        "activityIds": ["sherman-boat", "moca-beach", "manzanillo-refuge"]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "lodgingId": "congo-bongo",
+    "anchors": [],
+    "optionSets": [
+      {
+        "name": "Waterfall + chocolate",
+        "blurb": "Breakfast at bread what what, Rios hand pies for the trail, Two Waters or Ma-Cu before 10:00, Cacao Trails (or the Kekoldi family), Finca la Isla in the afternoon, dinner at Grow.",
+        "activityIds": ["bread-what-what", "rios-vegan", "finca-two-waters", "catarata-ma-cu", "cacao-trails", "kekoldi-cacao", "finca-la-isla", "grow"]
+      },
+      {
+        "name": "Puerto Viejo only",
+        "blurb": "bread what what, browse town, Finca la Isla, beach at Playa Negra, dinner in town at Grow, Umi Rojo (sushi) or El Dragon — or La NENA on the way back.",
+        "activityIds": ["bread-what-what", "finca-la-isla", "grow", "umi-rojo", "el-dragon", "la-nena"]
+      },
+      {
+        "name": "Stay south",
+        "blurb": "Refuge trail or Sherman's boat if not done Thursday, Moca Beach, dinner at Maxi's.",
+        "activityIds": ["manzanillo-refuge", "sherman-boat", "moca-beach", "maxis"]
+      }
+    ],
+    "warnings": ["Inland options are ~35 min from Manzanillo."]
+  },
+  {
+    "date": "2026-10-10",
+    "lodgingId": "congo-bongo",
+    "anchors": [
+      {
+        "time": "07:00",
+        "title": "Settle $419.51 with Congo Bongo",
+        "note": "Office opens 07:00. Checkout day.",
+        "phone": "+506 8957 4177",
+        "whatsapp": "50689574177"
+      },
+      {
+        "time": "15:30",
+        "title": "Adobe return — Limón downtown",
+        "note": "Office closes 17:00. Return with a full tank.",
+        "phone": "+506 2758 4042"
+      },
+      {
+        "time": "16:15",
+        "title": "Sansa check-in (LIO)"
+      },
+      {
+        "time": "17:10",
+        "title": "Sansa RZ1132 to SJO",
+        "note": "Alajuela City Hotel tonight."
+      }
+    ],
+    "optionSets": [
+      {
+        "name": "Cahuita snorkel + walk",
+        "blurb": "Leave 07:00, snorkel at 08:15, 45 min on the coastal trail, lunch in Cahuita village, leave 13:45, Adobe by 14:45.",
+        "activityIds": ["cahuita-snorkel", "cahuita-walk", "cahuita-town"]
+      },
+      {
+        "name": "Cahuita walk only",
+        "blurb": "Refuge dawn walk 06:30–08:00, leave 08:45, coastal trail 09:45–12:30, lunch in Cahuita village, leave 13:45.",
+        "activityIds": ["manzanillo-refuge", "cahuita-walk", "cahuita-town"]
+      },
+      {
+        "name": "Slow exit",
+        "blurb": "Beach morning at Manzanillo, early lunch at Moca Beach (closes 17:00 Sat), leave 13:45 direct to Limón (1h15).",
+        "activityIds": ["manzanillo-snorkel", "moca-beach"]
+      }
+    ],
+    "warnings": [
+      "All bags are in the car at Cahuita — paid lot at Kelly Creek, nothing visible.",
+      "Latest departure from Manzanillo direct to Limón: 13:45.",
+      "Saturday hours differ: Moca Beach closes 17:00, Rios Vegan closes 12:00."
+    ]
+  }
+]
