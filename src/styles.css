@@ -195,9 +195,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 .bottom-nav a.active { color: var(--accent); }
 
 /* ---------- Detail sheet ---------- */
-.sheet-backdrop { position: fixed; inset: 0; background: rgb(0 0 0 / 0.45); z-index: 40; animation: fade 160ms ease-out; }
+.sheet-backdrop { position: fixed; inset: 0; background: rgb(0 0 0 / 0.45); z-index: 1100; animation: fade 160ms ease-out; }
 .sheet {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 41; max-height: 92dvh; overflow-y: auto;
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 1101; max-height: 92dvh; overflow-y: auto;
   background: var(--surface); border-radius: 18px 18px 0 0; box-shadow: 0 -8px 30px rgb(0 0 0 / 0.25);
   padding: 8px 16px calc(20px + var(--safe-b)); animation: slideup 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
   max-width: 720px; margin: 0 auto; -webkit-overflow-scrolling: touch;
@@ -244,7 +244,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .related button { border: 1px solid var(--line); background: var(--surface-2); border-radius: 999px; padding: 5px 10px; font-size: 13px; cursor: pointer; }
 
 /* ---------- Map ---------- */
-.map-page { position: relative; height: calc(100dvh - var(--nav-h) - var(--safe-b)); }
+.map-page { position: relative; isolation: isolate; z-index: 0; height: calc(100dvh - var(--nav-h) - var(--safe-b)); }
 .map-page .leaflet-container { height: 100%; width: 100%; background: var(--surface-2); }
 .map-legend {
   position: absolute; left: 10px; bottom: 10px; z-index: 500; background: var(--surface); border-radius: var(--radius-sm);
@@ -260,7 +260,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .leaflet-popup-content-wrapper { border-radius: 10px; }
 
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
-@keyframes slideup { from { transform: translateY(24px); opacity: 0.6; } to { transform: none; opacity: 1; } }
+@keyframes slideup { from { transform: translateY(24px); } to { transform: none; } }
 
 @media (prefers-reduced-motion: reduce) {
   .sheet, .sheet-backdrop { animation: none; }
