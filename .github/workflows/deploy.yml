@@ -2,7 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # main is the intended source; the claude/* branch is the repo's current
+    # default until main exists.
+    branches: [main, 'claude/amazing-shannon-020qro']
   workflow_dispatch:
 
 permissions:

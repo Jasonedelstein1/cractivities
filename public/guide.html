@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caribe Sur · Field Guide · Oct 5–10 2026</title>
+<style>
+@page { size: letter; margin: 0.5in; }
+
+* { box-sizing: border-box; }
+
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 10pt;
+  line-height: 1.25;
+}
+
+.sheet { max-width: 7.5in; margin: 0 auto; padding: 0.5in 0.5in 0.6in; }
+@media print { .sheet { max-width: none; margin: 0; padding: 0; } }
+
+b, strong { font-weight: 700; }
+.dim { color: #000; opacity: 0.62; }
+.nw { white-space: nowrap; }
+.small { font-size: 9pt; }
+.sep { opacity: 0.35; padding: 0 0.15em; }
+
+.sans, .act-meta, .act-hours, .act-contact, .act-x, .act-book,
+.legend, table, .rgn-orient, .card-h, .mast-sub, .mast-line,
+.df-h, .opt-a, .day-lodge, .grp, .lab, .matrix-foot, .colophon {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.lab {
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.92em;
+}
+
+/* ------------------------------------------------------------- masthead */
+.masthead { border-bottom: 3px solid #000; padding-bottom: 5px; margin-bottom: 8px; }
+.mast-sub {
+  font-size: 9pt; font-weight: 700; letter-spacing: 0.24em;
+  text-transform: uppercase; margin-bottom: 2px;
+}
+.masthead h1 {
+  font-family: Georgia, serif;
+  font-size: 26pt; line-height: 0.95; margin: 1px 0 3px;
+  letter-spacing: -0.015em; font-weight: 700;
+}
+.mast-line { font-size: 10pt; }
+.mast-line.small { font-size: 8.5pt; opacity: 0.7; margin-top: 1px; }
+
+h2.sec {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9pt; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 8px 0 4px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #000;
+}
+
+/* --------------------------------------------------------------- cards */
+.cards { display: flex; gap: 12px; }
+.card { flex: 1; border: 1px solid #000; padding: 6px 8px; break-inside: avoid; }
+.card-h {
+  font-size: 8pt; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; border-bottom: 1px solid #000;
+  padding-bottom: 3px; margin-bottom: 5px;
+}
+.card-n { font-weight: 700; font-size: 10.5pt; line-height: 1.14; margin-bottom: 2px; }
+.card-b { font-size: 9pt; margin-bottom: 2px; }
+ul.tight { margin: 2px 0 3px; padding-left: 13px; font-size: 9pt; }
+ul.tight li { margin-bottom: 1px; }
+
+/* -------------------------------------------------------------- tables */
+table.grid { width: 100%; border-collapse: collapse; font-size: 9pt; }
+table.grid th {
+  text-align: left; font-size: 8pt; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  background: #000; color: #fff; padding: 3px 5px;
+  border: 1px solid #000;
+}
+table.grid td { border: 1px solid #000; padding: 2px 4px; vertical-align: top; }
+table.grid tr { break-inside: avoid; }
+
+table.num td.k { font-weight: 700; width: 24%; }
+table.num td.v { width: 26%; }
+
+table.days td:nth-child(1) { width: 12%; }
+table.days td:nth-child(2) { width: 12%; }
+table.days td:nth-child(3) { width: 38%; }
+table.days td:nth-child(4) { width: 38%; }
+
+/* Cover only: squeeze so the at-a-glance page never spills. */
+.cover table.grid td { padding: 1.5px 4px; line-height: 1.18; }
+.cover table.grid th { padding: 2px 4px; }
+.cover ul.tight li { margin-bottom: 0; line-height: 1.2; }
+.cover .card-b { line-height: 1.22; }
+
+/* --------------------------------------------------------- don't forget */
+.dontforget {
+  border: 2.5px solid #000; padding: 6px 9px; margin-top: 7px;
+  break-inside: avoid;
+}
+.df-h {
+  font-size: 9.5pt; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; margin-bottom: 4px;
+  border-bottom: 1px solid #000; padding-bottom: 3px;
+}
+.dontforget ul { margin: 0; padding-left: 14px; font-size: 9pt; }
+.dontforget li { margin-bottom: 1px; }
+.wdate {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 7.6pt; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid #000; padding: 0 3px; margin-right: 4px;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------- parts */
+.part { break-before: page; }
+.part-h {
+  font-family: Georgia, serif;
+  font-size: 19pt; font-weight: 700; margin: 0 0 4px;
+  letter-spacing: -0.01em;
+  border-bottom: 2.5px solid #000; padding-bottom: 5px;
+}
+.legend {
+  font-size: 8.2pt; margin: 5px 0 12px; padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+.legend b {
+  font-variant: small-caps; letter-spacing: 0.08em; margin-right: 6px;
+}
+.lg { margin-right: 11px; white-space: nowrap; }
+.legend .lg:last-child { white-space: normal; opacity: 0.68; }
+
+/* ------------------------------------------------------------- regions */
+.region { margin-bottom: 12px; break-inside: auto; }
+h3.rgn {
+  display: flex; align-items: baseline; gap: 8px;
+  margin: 9px 0 1px; padding-bottom: 2px;
+  border-bottom: 1.5px solid #000;
+  break-after: avoid;
+}
+.rgn-num {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9pt; font-weight: 700; letter-spacing: 0.05em;
+  border: 1.5px solid #000; padding: 0 3px;
+}
+.rgn-name {
+  font-family: Georgia, serif; font-size: 15pt; font-weight: 700;
+  letter-spacing: -0.005em;
+}
+.rgn-orient { font-size: 8.5pt; margin-bottom: 5px; break-after: avoid; }
+
+h4.grp {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 8pt; font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin: 7px 0 3px;
+  break-after: avoid;
+}
+h4.grp::after {
+  content: ""; display: block; border-bottom: 0.75pt solid #000;
+  margin-top: 2px;
+}
+
+.act {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 0 0 4px;
+  padding: 0 0 3px 0;
+  border-bottom: 0.5pt solid #000;
+}
+.act:last-child { border-bottom: none; }
+.act-h { display: flex; align-items: baseline; gap: 5px; margin-bottom: 1px; }
+.glyph { font-size: 8pt; line-height: 1; }
+.act-n { font-weight: 700; font-size: 11.5pt; line-height: 1.15; }
+.act-cat {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 7.2pt; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; opacity: 0.55; white-space: nowrap;
+}
+.act-meta { font-size: 9.2pt; margin-bottom: 1px; }
+.flag { border: 1px solid #000; padding: 0 3px; font-size: 8.2pt; }
+.act-hours { font-size: 9.2pt; margin-bottom: 2px; }
+.act-desc { font-size: 10pt; margin-bottom: 2px; }
+ul.hl { margin: 1px 0 2px; padding-left: 13px; font-size: 9.5pt; }
+ul.hl li { margin-bottom: 0.5px; }
+.act-note { font-size: 9.5pt; margin-bottom: 1px; }
+.act-book, .act-contact, .act-x { font-size: 8.8pt; margin-bottom: 1px; }
+.act-contact { letter-spacing: 0.005em; }
+
+/* ---------------------------------------------------------- day by day */
+.day { break-inside: avoid; page-break-inside: avoid; margin-bottom: 11px; }
+h3.day-h {
+  display: flex; align-items: baseline; gap: 8px;
+  margin: 0 0 5px; padding-bottom: 3px;
+  border-bottom: 1.5px solid #000;
+}
+.day-dow {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9pt; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1.5px solid #000; padding: 0 4px;
+}
+.day-date { font-family: Georgia, serif; font-size: 15pt; font-weight: 700; }
+.day-lodge {
+  font-size: 8.2pt; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; margin-left: auto; opacity: 0.7;
+}
+table.anch { margin-bottom: 5px; }
+table.anch td.t { width: 9%; font-weight: 700; white-space: nowrap; }
+table.anch td.ph { width: 22%; white-space: nowrap; }
+.anote { opacity: 0.75; }
+.noanchor { font-size: 9pt; font-style: italic; margin-bottom: 5px; opacity: 0.7; }
+.daywarn {
+  font-size: 8.8pt; border-left: 3px solid #000; padding: 2px 0 2px 7px;
+  margin: 0 0 6px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.daywarn b {
+  font-variant: small-caps; letter-spacing: 0.08em; margin-right: 4px;
+}
+.opt { margin: 0 0 5px; padding-left: 9px; border-left: 0.75pt solid #000; }
+.opt-n { font-weight: 700; font-size: 10.5pt; }
+.opt-b { font-size: 9.4pt; margin-bottom: 2px; }
+ol.opt-l { margin: 0; padding-left: 16px; font-size: 9.4pt; }
+ol.opt-l li { margin-bottom: 0.5px; }
+.opt-a { font-size: 8pt; letter-spacing: 0.04em; opacity: 0.62; }
+.closedtag {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 7pt; letter-spacing: 0.08em; border: 1px solid #000; padding: 0 2px;
+}
+
+/* -------------------------------------------------------------- matrix */
+table.matrix { font-size: 9pt; table-layout: fixed; }
+table.matrix th.mn, table.matrix td.mn { width: 28%; text-align: left; white-space: normal; overflow-wrap: break-word; line-height: 1.12; }
+table.matrix th { text-align: center; padding: 3px 1px; }
+table.matrix th .dh {
+  display: block; font-size: 6.6pt; letter-spacing: 0.04em; opacity: 0.85;
+}
+table.matrix td { text-align: center; white-space: nowrap; padding: 1.5px 1px; }
+table.matrix td.mn { text-align: left; font-weight: 400; }
+table.matrix td.cl { font-weight: 700; }
+table.matrix td.unk { opacity: 0.45; }
+tr.marea td {
+  background: #000; color: #fff;
+  font-size: 7.4pt; font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase; padding: 2px 5px;
+}
+.matrix-foot { font-size: 8.6pt; margin-top: 8px; border-top: 1px solid #000; padding-top: 5px; }
+
+/* --------------------------------------------------------------- notes */
+.notes-grid { margin-top: 10px; }
+.rule { border-bottom: 0.5pt solid #000; height: 0.32in; }
+.colophon {
+  margin-top: 18px; border-top: 2.5px solid #000; padding-top: 7px;
+  font-size: 9pt;
+}
+.colophon .small { opacity: 0.7; margin-top: 3px; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<section class="cover">
+  <header class="masthead">
+    <div class="mast-sub">Field guide</div>
+    <h1>Caribe Sur</h1>
+    <div class="mast-line">Costa Rica · southern Caribbean coast · <b>Mon 5 – Sat 10 October 2026</b></div>
+    <div class="mast-line small">Jason &amp; Andrea · Cahuita to Manzanillo · 32 entries, 30 activities</div>
+  </header>
+
+  <h2 class="sec">Home bases</h2>
+  <div class="cards">
+    
+    <div class="card">
+      <div class="card-h">Mon 5 – Wed 7 Oct</div>
+      <div class="card-n">Dragonfly Beach Retreat — Deluxe Casita</div>
+      <div class="card-b">Home base for Oct 5–6. Deluxe Casita, confirmation 4W9K5ZP4QB, paid in full.</div>
+      <ul class="tight"><li>Check-in Oct 5 15:00, check-out Oct 7 11:00</li><li>100 m from Playa Arrecife and La Sirena</li><li>Ask about on-site couples massage and bikes</li></ul>
+      <div class="card-b"><b>Phone / WhatsApp</b> +506 6128 7817</div>
+    </div>
+    
+    <div class="card">
+      <div class="card-h">Wed 7 – Sat 10 Oct</div>
+      <div class="card-n">Congo Bongo EcoVillage — Sweet Dream House</div>
+      <div class="card-b">Home base for Oct 7–10. Sweet Dream House, locator 33643575, $419.51 due at the property.</div>
+      <ul class="tight"><li>Office 07:00–16:00; after 16:00 keys are in the lockbox</li><li>Five minutes on foot to the Gandoca-Manzanillo refuge trail</li><li>Daan can book Sherman&#39;s boat directly</li></ul>
+      <div class="card-b"><b>Phone / WhatsApp</b> +506 8957 4177</div>
+    </div>
+  </div>
+
+  <h2 class="sec">Numbers to have on paper</h2>
+  <table class="grid num">
+    <tbody>
+      <tr><td class="k">Dragonfly Beach Retreat</td><td class="v">+506 6128 7817</td><td class="k">Conf.</td><td class="v">4W9K5ZP4QB · paid in full</td></tr>
+      <tr><td class="k">Congo Bongo — Daan Nelemans</td><td class="v">+506 8957 4177</td><td class="k">Locator</td><td class="v">33643575 · $419.51 due at property</td></tr>
+      <tr><td class="k">Adobe Rent a Car, Limón</td><td class="v">+506 2758 4042</td><td class="k">Car</td><td class="v">Pick up Mon 13:30 · return Sat 15:30, full tank (closes 17:00)</td></tr>
+      <tr><td class="k">Sansa — Limón (LIO)</td><td class="v">RZ1102 / RZ1132</td><td class="k">Flights</td><td class="v">Mon 12:40 arrive · Sat 17:10 depart to SJO</td></tr>
+      <tr><td class="k">Other numbers</td><td class="v" colspan="3">Jaguar Rescue +506 2750 0710 · Kayaks Punta Uva +506 8839 8386 · Beauty Ritual Spa +506 8314 8943 · Green Water Tours +506 6427 7088 · Cacao Trails +506 8353 8455 · Finca la Isla +506 8886 8530</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="sec">Six days at a glance</h2>
+  <table class="grid days">
+    <thead><tr><th>Date</th><th>Sleep</th><th>Fixed points</th><th>Option sets</th></tr></thead>
+    <tbody>
+<tr>
+      <td class="nw"><b>Mon Oct 5</b></td>
+      <td class="nw">Dragonfly</td>
+      <td><span class="nw"><b>12:40</b> Land Limón (Sansa RZ1102)</span><br><span class="nw"><b>13:30</b> Adobe Rent a Car pickup</span><br><span class="nw"><b>15:00</b> Dragonfly check-in</span></td>
+      <td>Land and float · Stretch the legs</td>
+    </tr>
+<tr>
+      <td class="nw"><b>Tue Oct 6</b></td>
+      <td class="nw">Dragonfly</td>
+      <td><span class="dim">Open day</span></td>
+      <td>Water day · Sloths first · Slow day</td>
+    </tr>
+<tr>
+      <td class="nw"><b>Wed Oct 7</b></td>
+      <td class="nw">Congo Bongo</td>
+      <td><span class="nw"><b>11:00</b> Dragonfly checkout</span><br><span class="nw"><b>16:00</b> Congo Bongo office closes</span></td>
+      <td>Cocles morning · Cahuita today instead of Saturday · Straight to Manzanillo</td>
+    </tr>
+<tr>
+      <td class="nw"><b>Thu Oct 8</b></td>
+      <td class="nw">Congo Bongo</td>
+      <td><span class="dim">Open day</span></td>
+      <td>Boat day · Hike day · Do both</td>
+    </tr>
+<tr>
+      <td class="nw"><b>Fri Oct 9</b></td>
+      <td class="nw">Congo Bongo</td>
+      <td><span class="dim">Open day</span></td>
+      <td>Waterfall + chocolate · Puerto Viejo only · Stay south</td>
+    </tr>
+<tr>
+      <td class="nw"><b>Sat Oct 10</b></td>
+      <td class="nw">Congo Bongo</td>
+      <td><span class="nw"><b>07:00</b> Settle $419.51 with Congo Bongo</span><br><span class="nw"><b>15:30</b> Adobe return — Limón downtown</span><br><span class="nw"><b>16:15</b> Sansa check-in (LIO)</span><br><span class="nw"><b>17:10</b> Sansa RZ1132 to SJO</span></td>
+      <td>Cahuita snorkel + walk · Cahuita walk only · Slow exit</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="dontforget">
+    <div class="df-h">Don't forget</div>
+    <ul>
+<li><span class="wdate">Tue Oct 6</span> La NENA is closed today (Tue).</li>
+<li><span class="wdate">Wed Oct 7</span> La NENA is closed today (Wed).</li>
+<li><span class="wdate">Fri Oct 9</span> Inland options are ~35 min from Manzanillo.</li>
+<li><span class="wdate">Sat Oct 10</span> All bags are in the car at Cahuita — paid lot at Kelly Creek, nothing visible.</li>
+<li><span class="wdate">Sat Oct 10</span> Latest departure from Manzanillo direct to Limón: 13:45.</li>
+<li><span class="wdate">Sat Oct 10</span> Saturday hours differ: Moca Beach closes 17:00, Rios Vegan closes 12:00.</li>
+      <li><span class="wdate">Every day</span> Carry cash — card machines are unreliable (Moca Beach, Ma-Cu, Two Waters, kayak rental are cash).</li>
+      <li><span class="wdate">Book ahead</span> Cahuita reef snorkel (24 h), Sherman's boat (ask Daan the day before), couples massage (WhatsApp a day ahead).</li>
+    </ul>
+  </div>
+</section>
+
+<section class="part" id="regions">
+  <h2 class="part-h">Part I · The coast, north to south</h2>
+  <div class="legend">
+    <b>Key</b>
+    <span class="lg">● Nature</span><span class="lg">○ Water</span><span class="lg">◆ Culture</span><span class="lg">▲ Wellness</span><span class="lg">◇ Town</span><span class="lg">■ Eat</span>
+    <span class="lg">Drive times are estimates: straight-line distance &times; 1.3, at 30 km/h.</span>
+  </div>
+
+<section class="region first-region">
+  <h3 class="rgn">
+    <span class="rgn-num">01</span>
+    <span class="rgn-name">Cahuita</span>
+  </h3>
+  <div class="rgn-orient">~47 min from Dragonfly / ~56 min from Congo Bongo <span class="sep">|</span> 3 entries</div>
+<h4 class="grp">Nature · Water</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">●</span>
+    <span class="act-n">Cahuita National Park — coastal trail</span>
+    <span class="act-cat">Nature</span>
+  </div>
+  <div class="act-meta">Donation, $5–10 pp suggested · 2–4 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 08:00–16:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 7, Oct 10</div>
+  <div class="act-desc">Flat 8 km trail from Kelly Creek (Cahuita village) to Puerto Vargas along the beach and through jungle; the last stretch is a raised boardwalk.</div>
+  <ul class="hl"><li>Sloths, howler and capuchin monkeys</li><li>Raccoons that raid bags</li><li>Punta Cahuita white-sand beach halfway</li></ul>
+  <div class="act-note"><i>Note: On a transit day, walk 45–60 min in and turn around. Park in the paid lot by Kelly Creek and leave nothing visible — bags will be in the car.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> None; guides at the Kelly Creek gate ~$25 pp</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Cahuita National Park — reef snorkel by boat; Cahuita village</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">○</span>
+    <span class="act-n">Cahuita National Park — reef snorkel by boat</span>
+    <span class="act-cat">Water</span>
+  </div>
+  <div class="act-meta">$45–55 pp, gear + fruit included · 2–2.5 h · <b class="flag">Book ahead</b> — Book 24 h ahead</div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 08:00–12:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 7, Oct 10</div>
+  <div class="act-desc">Ten-minute boat to two reef spots inside the park&#39;s 600-hectare marine zone, then a fruit break on Punta Cahuita beach.</div>
+  <ul class="hl"><li>Costa Rica&#39;s largest Caribbean reef</li><li>Sea turtles, rays, nurse sharks on the sand, parrotfish</li><li>Sep–Oct is peak visibility</li></ul>
+  <div class="act-note"><i>Note: Snorkeling here is guided-only. Conditions can cancel it the morning of — have the walk as plan B. Re-enter the park free after the boat. Tours at 08:15 and mid-morning.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Required — guided only. Cahuita Experience meets 08:15 at their shop; Wildlife Tours CR $45 + $20 pp optional pickup from Manzanillo; Green Cahuita on GetYourGuide ($49). <span class="sep">|</span> W wildlifetourscr.com</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Cahuita National Park — coastal trail; Cahuita village</div>
+</div>
+<h4 class="grp">Culture · Wellness · Town</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">◇</span>
+    <span class="act-n">Cahuita village</span>
+    <span class="act-cat">Town</span>
+  </div>
+  <div class="act-meta">1 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily open all day <span class="sep">|</span> <span class="lab">Best</span> Oct 10</div>
+  <div class="act-desc">Sleepy Afro-Caribbean village at the park gate: reggae bars, sodas serving rice-and-beans, one main street.</div>
+  <ul class="hl"><li>Lunch after the park</li><li>The last Caribbean stop before Limón</li></ul>
+  
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Cahuita National Park — coastal trail; Cahuita National Park — reef snorkel by boat</div>
+</div>
+
+</section>
+
+<section class="region">
+  <h3 class="rgn">
+    <span class="rgn-num">02</span>
+    <span class="rgn-name">Hone Creek / Bribri</span>
+  </h3>
+  <div class="rgn-orient">~32 min from Dragonfly / ~42 min from Congo Bongo <span class="sep">|</span> 5 entries</div>
+<h4 class="grp">Nature · Water</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">●</span>
+    <span class="act-n">Catarata Finca Two Waters</span>
+    <span class="act-cat">Nature</span>
+  </div>
+  <div class="act-meta">~$4 pp cash · 1.5 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 08:00–17:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 9</div>
+  <div class="act-desc">Two waterfalls on a family finca 2 km past Hone Creek on the Bribri road.</div>
+  <ul class="hl"><li>Deep pool with a jump rock on the lower fall</li><li>Lookout over Puerto Viejo and the coast</li><li>Usually empty before 10:00</li></ul>
+  <div class="act-note"><i>Note: 1 km steep driveway (fine in the Vitara), then 20–30 min muddy downhill walk; bring water. Cash.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Cacao Trails — Museo de Cacao; Kekoldi indigenous family — cacao and exotic animals <span class="sep">|</span> <span class="lab">Or</span> Catarata Ma-Cu (Bribri &quot;Sparkling&quot; waterfall)</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">●</span>
+    <span class="act-n">Catarata Ma-Cu (Bribri &quot;Sparkling&quot; waterfall)</span>
+    <span class="act-cat">Nature</span>
+  </div>
+  <div class="act-meta">₡2,500 pp, includes coffee and fruit · 1 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 08:00–17:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 9</div>
+  <div class="act-desc">Family-run falls halfway to Bribri.</div>
+  <ul class="hl"><li>Ten-minute walk down</li><li>Welcoming family</li><li>Coffee and fruit included</li></ul>
+  <div class="act-note"><i>Note: Steep and slippery; arrive early for parking at the house. Skip Volio — guided-only and security warnings.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> None; drive up the family&#39;s driveway off Route 36</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Cacao Trails — Museo de Cacao; Kekoldi indigenous family — cacao and exotic animals <span class="sep">|</span> <span class="lab">Or</span> Catarata Finca Two Waters</div>
+</div>
+<h4 class="grp">Culture · Wellness · Town</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">◆</span>
+    <span class="act-n">Cacao Trails — Museo de Cacao</span>
+    <span class="act-cat">Culture</span>
+  </div>
+  <div class="act-meta">~$30–35 pp · 2 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 08:00–16:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 9</div>
+  <div class="act-desc">Working cacao garden and small museum at Hone Creek.</div>
+  <ul class="hl"><li>Bean-to-bar walk</li><li>Bribri history</li><li>Wildlife on the property</li><li>You make and taste the chocolate at the end</li></ul>
+  <div class="act-note"><i>Note: Ten minutes from the Two Waters turnoff.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> WhatsApp; ask for Daniel <span class="sep">|</span> T +506 8353 8455</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Catarata Finca Two Waters; Catarata Ma-Cu (Bribri &quot;Sparkling&quot; waterfall); Finca la Isla permaculture farm and botanical garden <span class="sep">|</span> <span class="lab">Or</span> Kekoldi indigenous family — cacao and exotic animals</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">◆</span>
+    <span class="act-n">Kekoldi indigenous family — cacao and exotic animals</span>
+    <span class="act-cat">Culture</span>
+  </div>
+  <div class="act-meta">Ask · 2 h · <b class="flag">Book ahead</b> — Confirm by phone before driving</div>
+  <div class="act-hours"><span class="lab">Hours</span> By arrangement <span class="sep">|</span> <span class="lab">Best</span> Oct 9</div>
+  <div class="act-desc">Small Bribri family operation near Hone Creek: the whole cacao process through to a thick chocolate drink, plus the animals they keep.</div>
+  <ul class="hl"><li>Personal, few visitors</li></ul>
+  <div class="act-note"><i>Note: Only two public reviews — confirm by phone before driving. Spanish.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Call/WhatsApp (Spanish) <span class="sep">|</span> T +506 8580 5253</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Catarata Finca Two Waters; Catarata Ma-Cu (Bribri &quot;Sparkling&quot; waterfall) <span class="sep">|</span> <span class="lab">Or</span> Cacao Trails — Museo de Cacao; Kekoldi Reserve — chocolate + waterfall tour (backup)</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">◆</span>
+    <span class="act-n">Kekoldi Reserve — chocolate + waterfall tour (backup)</span>
+    <span class="act-cat">Culture</span>
+  </div>
+  <div class="act-meta">From ~$75 pp · 4–6 h · <b class="flag">Book ahead</b> — Book online the day before</div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 08:00–14:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 9</div>
+  <div class="act-desc">Guided version if the family doesn&#39;t answer: iguana conservation project, medicinal plants, chocolate, waterfall swim, Caribbean lunch.</div>
+  <ul class="hl"><li>Iguana conservation project</li><li>Medicinal plants and chocolate</li><li>Waterfall swim and Caribbean lunch</li></ul>
+  <div class="act-note"><i>Note: Tours ~08:00. Backup only if kekoldi-cacao doesn&#39;t answer.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Viator / Musement &quot;Indigenous Reserve Chocolate and Waterfalls&quot; <span class="sep">|</span> W viator.com/searchResults/all</div>
+  <div class="act-x"><span class="lab">Or</span> Kekoldi indigenous family — cacao and exotic animals; Cacao Trails — Museo de Cacao</div>
+</div>
+
+</section>
+
+<section class="region">
+  <h3 class="rgn">
+    <span class="rgn-num">03</span>
+    <span class="rgn-name">Puerto Viejo</span>
+  </h3>
+  <div class="rgn-orient">~18 min from Dragonfly / ~28 min from Congo Bongo <span class="sep">|</span> 6 entries</div>
+<h4 class="grp">Nature · Water</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">●</span>
+    <span class="act-n">Finca la Isla permaculture farm and botanical garden</span>
+    <span class="act-cat">Nature</span>
+  </div>
+  <div class="act-meta">~$8 self-guided; guided by arrangement · 1.5–2 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon 10:00–16:00 · Tue–Thu closed · Fri–Sun 10:00–16:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 5, Oct 9</div>
+  <div class="act-desc">Spice, fruit, and medicinal-plant garden on the Playa Negra side of Puerto Viejo.</div>
+  <ul class="hl"><li>Vanilla, nutmeg, cinnamon</li><li>Fruit tasting at the end</li><li>Red poison-dart frogs, sloths and toucans on the property</li></ul>
+  <div class="act-note"><i>Note: Mud shoes; signs on the self-guided route are faded, so a guide is worth it. Closed Tue–Thu.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Call a day ahead for a guided walk <span class="sep">|</span> T +506 8886 8530</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Grow Puerto Viejo; bread what what; La NENA</div>
+</div>
+
+<h4 class="grp">Eat</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">Grow Puerto Viejo</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon–Sat 12:00–21:00 · Sun closed <span class="sep">|</span> <span class="lab">Best</span> Oct 9</div>
+  <div class="act-desc">Vegetarian/vegan on the Puerto Viejo waterfront.</div>
+  <ul class="hl"><li>Mushroom tacos</li><li>Falafel salad</li><li>Carrot-lox bruschetta</li><li>Smoothies, sea view</li></ul>
+  <div class="act-note"><i>Note: Closed Sunday.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Finca la Isla permaculture farm and botanical garden; bread what what</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">Rios Vegan Food</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon–Fri 08:00–16:00 · Sat 07:00–12:00 · Sun closed <span class="sep">|</span> <span class="lab">Best</span> Oct 9</div>
+  <div class="act-desc">Tiny vegan counter in Puerto Viejo.</div>
+  <ul class="hl"><li>Hand-pie empanadas (~₡1,800; lentil bolognese, Indian-spiced)</li><li>Croissants</li><li>Banana cake</li></ul>
+  <div class="act-note"><i>Note: Takeout — grab for a hike. Sat 07:00–12:00 only; closed Sunday.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Catarata Finca Two Waters; Catarata Ma-Cu (Bribri &quot;Sparkling&quot; waterfall); bread what what</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">bread what what</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon 08:00–15:00 · Tue closed · Wed–Fri 08:00–15:00 · Sat–Sun 08:00–16:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 9</div>
+  <div class="act-desc">Puerto Viejo brunch café.</div>
+  <ul class="hl"><li>Huge sandwiches, banana waffles, açaí</li><li>No-sugar juices, strong coffee</li><li>Sloths sometimes visible from the tables</li></ul>
+  <div class="act-note"><i>Note: Closed Tuesday. Closes 15:00 on weekdays, 16:00 on weekends.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Rios Vegan Food; Finca la Isla permaculture farm and botanical garden; Grow Puerto Viejo</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">Restaurante El Dragon — Asian cuisine &amp; Kung Fu Bar</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 17:00–22:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 5, Oct 9</div>
+  <div class="act-desc">Pan-Asian dinner spot on the coast road just past Salsa Brava in Puerto Viejo, with cocktails and kung-fu movies playing in the bar. 4.7★ on Tripadvisor.</div>
+  <ul class="hl"><li>Handmade dumplings and gyoza (veggie ones are the favorite)</li><li>Pad Thai reviewers call the best of their trip</li><li>Fried rice, edamame, sweet-chili veggies</li><li>Vegetarian dishes made vegan on request</li></ul>
+  <div class="act-note"><i>Note: Dinner only, opens ~17:00. 200 m south of Super Diamante, after Salsa Brava, left side. Pin and hours are from web listings, not verified on the ground — confirm by phone. Small room; go early.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Walk in; call to confirm hours <span class="sep">|</span> T +506 6095 4940 · W instagram.com/thedragon.pv</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Finca la Isla permaculture farm and botanical garden; bread what what <span class="sep">|</span> <span class="lab">Or</span> Umi Rojo Beach House (ex-Chile Rojo); Grow Puerto Viejo; La NENA</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">Umi Rojo Beach House (ex-Chile Rojo)</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon 17:00–22:00 · Tue closed · Wed 17:00–22:00 · Thu–Fri 17:00–23:00 · Sat–Sun 12:00–23:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 9</div>
+  <div class="act-desc">Oceanfront Thai–Japanese fusion with a sushi bar on Puerto Viejo&#39;s main street, next to KOKi Beach. Appears to be the long-running Chile Rojo under a new name.</div>
+  <ul class="hl"><li>Sushi rolls and sampler platters with local fish</li><li>Thai seafood soup, sea bass in shrimp-coconut sauce</li><li>Handmade gyoza, Korean wings, dynamite shrimp</li><li>Strong vegan and gluten-free menu</li><li>2-for-1 cocktail promo most nights</li></ul>
+  <div class="act-note"><i>Note: Chile Rojo hours were: closed Tue, dinner-only weekdays, lunch too Sat &amp; Sun. Hours may have changed with the rebrand — call first. Skip the Monday all-you-can-eat buffet night: quality and wait times drop. Main-street location, no dedicated parking.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Walk in; call to confirm hours and name <span class="sep">|</span> T +506 2750 0421 · W facebook.com/p/Chile-Rojo-100063453198523</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Finca la Isla permaculture farm and botanical garden; Grow Puerto Viejo <span class="sep">|</span> <span class="lab">Or</span> Restaurante El Dragon — Asian cuisine &amp; Kung Fu Bar; Grow Puerto Viejo</div>
+</div>
+</section>
+
+<section class="region">
+  <h3 class="rgn">
+    <span class="rgn-num">04</span>
+    <span class="rgn-name">Playa Chiquita</span>
+  </h3>
+  <div class="rgn-orient">~9 min from Dragonfly / ~18 min from Congo Bongo <span class="sep">|</span> 1 entry</div>
+
+
+<h4 class="grp">Eat</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">Spicy Coconut</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 12:30–21:30 <span class="sep">|</span> <span class="lab">Best</span> Oct 6, Oct 7</div>
+  <div class="act-desc">Beachfront Caribbean-fusion restaurant and cocktail terrace inside Hotel Villas del Caribe in Playa Chiquita, directly across the road from the Jaguar Rescue Center. 4.5★ from 159 reviews.</div>
+  <ul class="hl"><li>Poke bowls, Thai coconut curry, coconut shrimp</li><li>Spicy ceviche and avocado lomito tacos</li><li>Polynesian hot wings, margaritas at sunset</li><li>Sloths in the almond tree over the terrace</li><li>Small boutique of local handmade goods</li></ul>
+  <div class="act-note"><i>Note: Lunch and dinner, 12:30–21:30; closed days not published — call to confirm. Busy on weekend nights; reserve by phone. Hotel parking. The natural lunch after the 09:30 Jaguar Rescue tour.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Reservations by phone <span class="sep">|</span> T +506 2201 7849 · W spicy-coconut.com</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Jaguar Rescue Center; Masajes Beauty Ritual Spa — couples massage <span class="sep">|</span> <span class="lab">Or</span> La Sirena; SAGE @ Playa 506; Pita &amp; Hummus House</div>
+</div>
+</section>
+
+<section class="region">
+  <h3 class="rgn">
+    <span class="rgn-num">05</span>
+    <span class="rgn-name">Cocles</span>
+  </h3>
+  <div class="rgn-orient">~10 min from Dragonfly / ~20 min from Congo Bongo <span class="sep">|</span> 6 entries</div>
+<h4 class="grp">Nature · Water</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">●</span>
+    <span class="act-n">Jaguar Rescue Center</span>
+    <span class="act-cat">Nature</span>
+  </div>
+  <div class="act-meta">~$24 pp · 2 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 09:00–13:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 6, Oct 7</div>
+  <div class="act-desc">Wildlife rescue and rehab center in Cocles; small guided groups walk you past sloths, monkeys, toucans, snakes, with each animal&#39;s story.</div>
+  <ul class="hl"><li>Guaranteed close sloths</li><li>Volunteers are excellent</li><li>Money goes to releases</li></ul>
+  <div class="act-note"><i>Note: Bring repellent; tip the guide. Ten minutes from Dragonfly. Tours at 09:30 and 11:30.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Walk in, or reserve online <span class="sep">|</span> T +506 2750 0710 · W jaguarrescue.foundation</div>
+  <div class="act-x"><span class="lab">Pairs with</span> La Sirena; SAGE @ Playa 506; Pita &amp; Hummus House</div>
+</div>
+<h4 class="grp">Culture · Wellness · Town</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">▲</span>
+    <span class="act-n">Masajes Beauty Ritual Spa — couples massage</span>
+    <span class="act-cat">Wellness</span>
+  </div>
+  <div class="act-meta">~$70 pp / 70 min · 1.5 h · <b class="flag">Book ahead</b> — WhatsApp a day ahead</div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 08:00–21:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 6, Oct 8</div>
+  <div class="act-desc">Cocles studio on Calle Ole Caribe, 5.0★ from 110 reviews.</div>
+  <ul class="hl"><li>Couples room</li><li>Foot bath and cold chocolate on arrival</li><li>Chocolate facial at the end</li><li>Reviewers call it the best massage of their trip</li></ul>
+  <div class="act-note"><i>Note: Ask about a beach setup vs. studio. Same street as Zaika — pair them.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> WhatsApp <span class="sep">|</span> T +506 8314 8943</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Zaika Indian Cuisine Bar &amp; Grill</div>
+</div>
+<h4 class="grp">Eat</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">La NENA</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon 12:00–20:30 · Tue–Wed closed · Thu–Sun 12:00–20:30 <span class="sep">|</span> <span class="lab">Best</span> Oct 5, Oct 8, Oct 9</div>
+  <div class="act-desc">Roadside Caribbean in Cocles.</div>
+  <ul class="hl"><li>Chicken thighs with coconut rice-and-beans</li><li>Oxtail</li><li>Shrimp rice</li><li>House hot sauce</li></ul>
+  <div class="act-note"><i>Note: Closed Tue and Wed — Monday night is the natural slot. Vegetarian options are thin.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Finca la Isla permaculture farm and botanical garden</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">Zaika Indian Cuisine Bar &amp; Grill</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon–Sat 12:00–22:00 · Sun closed <span class="sep">|</span> <span class="lab">Best</span> Oct 6, Oct 8</div>
+  <div class="act-desc">Open-kitchen Indian on Calle Ole Caribe.</div>
+  <ul class="hl"><li>Mixed grill</li><li>Fish curry</li><li>Shahi paneer</li><li>Real heat on request, vegan-friendly</li></ul>
+  <div class="act-note"><i>Note: Next to the spa. Closed Sunday.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Masajes Beauty Ritual Spa — couples massage</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">Pita &amp; Hummus House</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon–Sat 07:00–21:00 · Sun closed <span class="sep">|</span> <span class="lab">Best</span> Oct 7, Oct 8</div>
+  <div class="act-desc">Family Lebanese on Route 256.</div>
+  <ul class="hl"><li>Homemade falafel, tabbouleh, lamb kebab</li><li>Mojitos</li><li>Strong vegan options</li><li>Parking on site</li></ul>
+  <div class="act-note"><i>Note: Closed Sunday.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Jaguar Rescue Center</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">SAGE @ Playa 506</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 08:00–21:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 7</div>
+  <div class="act-desc">Beer garden built around a tree on Playa Cocles, sand floor, hammocks.</div>
+  <ul class="hl"><li>The setting</li><li>Avocado toast and juices at breakfast</li><li>A place to sit on the beach with a drink</li></ul>
+  <div class="act-note"><i>Note: Food reviews are mixed — go for the spot.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Jaguar Rescue Center; Masajes Beauty Ritual Spa — couples massage</div>
+</div>
+</section>
+
+<section class="region">
+  <h3 class="rgn">
+    <span class="rgn-num">06</span>
+    <span class="rgn-name">Punta Uva</span>
+  </h3>
+  <div class="rgn-orient">~1 min from Dragonfly / ~9 min from Congo Bongo <span class="sep">|</span> 3 entries</div>
+<h4 class="grp">Nature · Water</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">○</span>
+    <span class="act-n">Río Punta Uva kayak + sloth walk</span>
+    <span class="act-cat">Water</span>
+  </div>
+  <div class="act-meta">Rental ~$10 pp/h cash; guided ~$50–76 pp · 1–2.5 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 08:00–17:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 6</div>
+  <div class="act-desc">Paddle up the river that meets the sea at Punta Uva point.</div>
+  <ul class="hl"><li>Sloths, toucans, iguanas, turtles at water level</li><li>Guides add a short walk to the point lookout</li><li>Walking distance from Dragonfly</li></ul>
+  <div class="act-note"><i>Note: Go at 08:00 for wildlife and before the wind. Rental is cash.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Rental: Kayaks Punta Uva +506 8839 8386. Guided: Green Water Tours +506 6427 7088 (Playa Arrecife), Pachos Place +506 6009 1870. <span class="sep">|</span> T +506 8839 8386</div>
+  <div class="act-x"><span class="lab">Pairs with</span> DIY snorkel at Playa Arrecife / Punta Uva point; La Sirena</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">○</span>
+    <span class="act-n">DIY snorkel at Playa Arrecife / Punta Uva point</span>
+    <span class="act-cat">Water</span>
+  </div>
+  <div class="act-meta">Gear rental ~$5–10/day · 1 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 06:00–17:30 <span class="sep">|</span> <span class="lab">Best</span> Oct 6</div>
+  <div class="act-desc">Shore snorkel around the rocks at the point on a calm morning.</div>
+  <ul class="hl"><li>No boat, no guide, ten minutes from the casita</li><li>La Sirena lunch afterward</li></ul>
+  <div class="act-note"><i>Note: Only worth it when the sea is flat.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Rent gear from Green Water Tours at Arrecife <span class="sep">|</span> T +506 6427 7088</div>
+  <div class="act-x"><span class="lab">Pairs with</span> La Sirena; Río Punta Uva kayak + sloth walk</div>
+</div>
+
+<h4 class="grp">Eat</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">La Sirena</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon–Sat 11:00–17:00 · Sun closed <span class="sep">|</span> <span class="lab">Best</span> Oct 6</div>
+  <div class="act-desc">On Playa Arrecife, 100 m from Dragonfly. Lunch on a tray on the sand.</div>
+  <ul class="hl"><li>Peruvian-style ceviche (fish or vegetarian)</li><li>Catch of the day in white-wine chimichurri butter</li><li>Spicy shrimp</li><li>They hand you a tray to eat on the sand</li></ul>
+  <div class="act-note"><i>Note: Lunch only. Closed Sunday.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> DIY snorkel at Playa Arrecife / Punta Uva point; Río Punta Uva kayak + sloth walk; Jaguar Rescue Center</div>
+</div>
+</section>
+
+<section class="region">
+  <h3 class="rgn">
+    <span class="rgn-num">07</span>
+    <span class="rgn-name">Manzanillo</span>
+  </h3>
+  <div class="rgn-orient">~11 min from Dragonfly / ~2 min from Congo Bongo <span class="sep">|</span> 6 entries</div>
+<h4 class="grp">Nature · Water</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">●</span>
+    <span class="act-n">Gandoca-Manzanillo Wildlife Refuge trail</span>
+    <span class="act-cat">Nature</span>
+  </div>
+  <div class="act-meta">Donation · 1.5–4 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 06:30–15:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 8, Oct 9, Oct 10</div>
+  <div class="act-desc">Trail from Manzanillo village south along cliffs to hidden coves; Playa Bite at ~1.5 km, Punta Mona at ~5 km.</div>
+  <ul class="hl"><li>Sloths, howlers, poison-dart frogs</li><li>Clifftop viewpoint</li><li>Empty beaches for a swim</li></ul>
+  <div class="act-note"><i>Note: Mud — real shoes. Five minutes on foot from Congo Bongo. A 06:30 start on Oct 10 still leaves time for Cahuita.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Optional guide at the entrance (~$30–40 pp) or via Congo Bongo&#39;s Caribe Fun Tours link</div>
+  <div class="act-x"><span class="lab">Pairs with</span> DIY snorkel off Manzanillo beach; Moca Beach Restaurant; Maxi&#39;s Restaurant (Manzanillo)</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">○</span>
+    <span class="act-n">Sherman&#39;s Boat Tour — dolphins, Punta Mona, snorkel</span>
+    <span class="act-cat">Water</span>
+  </div>
+  <div class="act-meta">$85–110 pp · 3–4 h · <b class="flag">Book ahead</b> — Ask Daan the day before</div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 07:30–17:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 8, Oct 9</div>
+  <div class="act-desc">Launch from Manzanillo beach, search for bottlenose and tucuxi dolphins off Gandoca (~85–90% sighting), then a beach break at Punta Mona with snorkeling on the point when conditions allow.</div>
+  <ul class="hl"><li>Punta Mona is boat-or-3-hour-hike only, so you have it nearly alone</li><li>Fresh fruit and pipa on the sand</li><li>The reef has reef sharks and gorges</li></ul>
+  <div class="act-note"><i>Note: No pier — you climb in from the beach. Ask him to include the Punta Mona farm walk. Departures ~08:00 and ~13:00.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Required. Ask Daan at Congo Bongo to book Sherman directly; backup Rico Tico / Sulariwäk on GetYourGuide (meets by the Manzanillo soccer field). <span class="sep">|</span> T +506 8957 4177</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Punta Mona permaculture farm; Maxi&#39;s Restaurant (Manzanillo)</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">○</span>
+    <span class="act-n">DIY snorkel off Manzanillo beach</span>
+    <span class="act-cat">Water</span>
+  </div>
+  <div class="act-meta">Gear rental ~$5–10 · 1 h · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 06:00–17:30 <span class="sep">|</span> <span class="lab">Best</span> Oct 8, Oct 9</div>
+  <div class="act-desc">Shallow reef right in front of the village.</div>
+  <ul class="hl"><li>Walk from Congo Bongo</li><li>No booking</li></ul>
+  <div class="act-note"><i>Note: Calm mornings only.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Rent gear in the village</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Gandoca-Manzanillo Wildlife Refuge trail; Maxi&#39;s Restaurant (Manzanillo)</div>
+</div>
+<h4 class="grp">Culture · Wellness · Town</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">◆</span>
+    <span class="act-n">Punta Mona permaculture farm</span>
+    <span class="act-cat">Culture</span>
+  </div>
+  <div class="act-meta">Included in boat combos · 1 h · <b class="flag">Book ahead</b></div>
+  <div class="act-hours"><span class="lab">Hours</span> By arrangement <span class="sep">|</span> <span class="lab">Best</span> Oct 8</div>
+  <div class="act-desc">Hundred-acre off-grid farm behind Punta Mona beach.</div>
+  <ul class="hl"><li>Fruit tasting from the orchard</li><li>The story of the place</li></ul>
+  <div class="act-note"><i>Note: Do not plan a separate hike-in visit. Only reachable as an add-on to Sherman&#39;s boat.</i></div>
+  <div class="act-book"><span class="lab">Booking</span> Only as an add-on to Sherman&#39;s boat; standalone public visits appear dormant</div>
+  <div class="act-x"><span class="lab">Pairs with</span> Sherman&#39;s Boat Tour — dolphins, Punta Mona, snorkel</div>
+</div>
+<h4 class="grp">Eat</h4>
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">Moca Beach Restaurant</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Mon–Fri 07:00–21:00 · Sat 09:00–17:00 · Sun 07:00–21:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 7, Oct 8, Oct 9</div>
+  <div class="act-desc">Jungle-hotel restaurant 2 km before Manzanillo with a path to its own beach.</div>
+  <ul class="hl"><li>Casados, octopus, chicken patacones</li><li>Coconut flan, cocktails</li><li>Monkeys on the beach path</li></ul>
+  <div class="act-note"><i>Note: Carry cash — the card machine is unreliable. Sat closes 17:00.</i></div>
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Gandoca-Manzanillo Wildlife Refuge trail; DIY snorkel off Manzanillo beach</div>
+</div>
+
+<div class="act">
+  <div class="act-h">
+    <span class="glyph">■</span>
+    <span class="act-n">Maxi&#39;s Restaurant (Manzanillo)</span>
+    <span class="act-cat">Eat</span>
+  </div>
+  <div class="act-meta">$$ · <span class="dim">No booking needed</span></div>
+  <div class="act-hours"><span class="lab">Hours</span> Daily 11:00–21:00 <span class="sep">|</span> <span class="lab">Best</span> Oct 8, Oct 9</div>
+  <div class="act-desc">The village institution by the beach — whole red snapper, lobster, rondón.</div>
+  <ul class="hl"><li>Whole red snapper, lobster, rondón</li><li>Walkable from Congo Bongo, so no driving after drinks</li></ul>
+  
+  
+  <div class="act-x"><span class="lab">Pairs with</span> Sherman&#39;s Boat Tour — dolphins, Punta Mona, snorkel; Gandoca-Manzanillo Wildlife Refuge trail; DIY snorkel off Manzanillo beach</div>
+</div>
+</section>
+</section>
+
+<section class="part" id="daybyday">
+  <h2 class="part-h">Part II · Day by day</h2>
+  <div class="legend"><b>Note</b> <span class="lg">Anchors are fixed. Option sets are alternatives — pick one, not all.</span></div>
+
+<section class="day">
+  <h3 class="day-h"><span class="day-dow">Mon</span> <span class="day-date">Oct 5</span> <span class="day-lodge">Dragonfly, Punta Uva</span></h3>
+  <table class="grid anch"><tbody>
+          <tr>
+            <td class="t">12:40</td>
+            <td><b>Land Limón (Sansa RZ1102)</b> <span class="anote">Limón International Airport (LIO).</span></td>
+            <td class="ph"></td>
+          </tr>
+          <tr>
+            <td class="t">13:30</td>
+            <td><b>Adobe Rent a Car pickup</b> <span class="anote">Bring passport, license, Fidelity card, ARCDW pages.</span></td>
+            <td class="ph">+506 2758 4042</td>
+          </tr>
+          <tr>
+            <td class="t">15:00</td>
+            <td><b>Dragonfly check-in</b> <span class="anote">~1h15 drive from Limón. Conf 4W9K5ZP4QB, paid in full.</span></td>
+            <td class="ph">+506 6128 7817</td>
+          </tr></tbody></table>
+  
+  
+      <div class="opt">
+        <div class="opt-n">Land and float</div>
+        <div class="opt-b">Arrive, swim at Punta Uva beach, dinner at La NENA — the only night it&#39;s open before Thursday. El Dragon in town is the backup if you land hungry for Asian.</div>
+        <ol class="opt-l"><li>■ La NENA <span class="opt-a">[Cocles]</span></li><li>■ Restaurante El Dragon — Asian cuisine &amp; Kung Fu Bar <span class="opt-a">[Puerto Viejo]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Stretch the legs</div>
+        <div class="opt-b">Finca la Isla on the way through Puerto Viejo (open Mon until 16:00 — tight after a 15:00 check-in, only if the car pickup is fast), then dinner at La NENA.</div>
+        <ol class="opt-l"><li>● Finca la Isla permaculture farm and botanical garden <span class="opt-a">[Puerto Viejo]</span></li><li>■ La NENA <span class="opt-a">[Cocles]</span></li></ol>
+      </div>
+</section>
+
+<section class="day">
+  <h3 class="day-h"><span class="day-dow">Tue</span> <span class="day-date">Oct 6</span> <span class="day-lodge">Dragonfly, Punta Uva</span></h3>
+  <div class="noanchor">No fixed times today — the whole day is yours.</div>
+  <div class="daywarn"><b>Watch out</b> La NENA is closed today (Tue).</div>
+  
+      <div class="opt">
+        <div class="opt-n">Water day</div>
+        <div class="opt-b">Kayak at 08:00, snorkel the point, lunch on the sand at La Sirena, couples massage at 16:00, dinner at Zaika.</div>
+        <ol class="opt-l"><li>○ Río Punta Uva kayak + sloth walk <span class="opt-a">[Punta Uva]</span></li><li>○ DIY snorkel at Playa Arrecife / Punta Uva point <span class="opt-a">[Punta Uva]</span></li><li>■ La Sirena <span class="opt-a">[Punta Uva]</span></li><li>▲ Masajes Beauty Ritual Spa — couples massage <span class="opt-a">[Cocles]</span></li><li>■ Zaika Indian Cuisine Bar &amp; Grill <span class="opt-a">[Cocles]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Sloths first</div>
+        <div class="opt-b">Jaguar Rescue 09:30 tour, lunch at Spicy Coconut across the road (or back to La Sirena), afternoon kayak, dinner at Zaika or Pita &amp; Hummus.</div>
+        <ol class="opt-l"><li>● Jaguar Rescue Center <span class="opt-a">[Cocles]</span></li><li>■ Spicy Coconut <span class="opt-a">[Playa Chiquita]</span></li><li>■ La Sirena <span class="opt-a">[Punta Uva]</span></li><li>○ Río Punta Uva kayak + sloth walk <span class="opt-a">[Punta Uva]</span></li><li>■ Zaika Indian Cuisine Bar &amp; Grill <span class="opt-a">[Cocles]</span></li><li>■ Pita &amp; Hummus House <span class="opt-a">[Cocles]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Slow day</div>
+        <div class="opt-b">Bikes from Dragonfly to Playa Chiquita and Cocles, SAGE for a beach afternoon, massage, dinner at Zaika.</div>
+        <ol class="opt-l"><li>■ SAGE @ Playa 506 <span class="opt-a">[Cocles]</span></li><li>▲ Masajes Beauty Ritual Spa — couples massage <span class="opt-a">[Cocles]</span></li><li>■ Zaika Indian Cuisine Bar &amp; Grill <span class="opt-a">[Cocles]</span></li></ol>
+      </div>
+</section>
+
+<section class="day">
+  <h3 class="day-h"><span class="day-dow">Wed</span> <span class="day-date">Oct 7</span> <span class="day-lodge">Congo Bongo, Manzanillo</span></h3>
+  <table class="grid anch"><tbody>
+          <tr>
+            <td class="t">11:00</td>
+            <td><b>Dragonfly checkout</b></td>
+            <td class="ph">+506 6128 7817</td>
+          </tr>
+          <tr>
+            <td class="t">16:00</td>
+            <td><b>Congo Bongo office closes</b> <span class="anote">~10 min drive from Dragonfly. After 16:00 keys are in the lockbox — confirm the code with Daan.</span></td>
+            <td class="ph">+506 8957 4177</td>
+          </tr></tbody></table>
+  <div class="daywarn"><b>Watch out</b> La NENA is closed today (Wed).</div>
+  
+      <div class="opt">
+        <div class="opt-n">Cocles morning</div>
+        <div class="opt-b">Jaguar Rescue 09:30 (if not done Tue), lunch at Spicy Coconut, SAGE or Pita &amp; Hummus, check in, dinner at Moca Beach.</div>
+        <ol class="opt-l"><li>● Jaguar Rescue Center <span class="opt-a">[Cocles]</span></li><li>■ Spicy Coconut <span class="opt-a">[Playa Chiquita]</span></li><li>■ SAGE @ Playa 506 <span class="opt-a">[Cocles]</span></li><li>■ Pita &amp; Hummus House <span class="opt-a">[Cocles]</span></li><li>■ Moca Beach Restaurant <span class="opt-a">[Manzanillo]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Cahuita today instead of Saturday</div>
+        <div class="opt-b">Leave 07:15, snorkel at 08:15 and/or the coastal walk, lunch in Cahuita village, 50 min south to Congo Bongo before 16:00, dinner at Moca Beach. Frees Saturday for a slow morning.</div>
+        <ol class="opt-l"><li>○ Cahuita National Park — reef snorkel by boat <span class="opt-a">[Cahuita]</span></li><li>● Cahuita National Park — coastal trail <span class="opt-a">[Cahuita]</span></li><li>◇ Cahuita village <span class="opt-a">[Cahuita]</span></li><li>■ Moca Beach Restaurant <span class="opt-a">[Manzanillo]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Straight to Manzanillo</div>
+        <div class="opt-b">Check in early, short walk in the refuge (closes 15:00), swim, dinner at Moca Beach.</div>
+        <ol class="opt-l"><li>● Gandoca-Manzanillo Wildlife Refuge trail <span class="opt-a">[Manzanillo]</span></li><li>■ Moca Beach Restaurant <span class="opt-a">[Manzanillo]</span></li></ol>
+      </div>
+</section>
+
+<section class="day">
+  <h3 class="day-h"><span class="day-dow">Thu</span> <span class="day-date">Oct 8</span> <span class="day-lodge">Congo Bongo, Manzanillo</span></h3>
+  <div class="noanchor">No fixed times today — the whole day is yours.</div>
+  
+  
+      <div class="opt">
+        <div class="opt-n">Boat day</div>
+        <div class="opt-b">Sherman&#39;s boat at 08:00 with the Punta Mona farm add-on, slow afternoon, dinner at Pita &amp; Hummus (25 min) or walk to Maxi&#39;s.</div>
+        <ol class="opt-l"><li>○ Sherman&#39;s Boat Tour — dolphins, Punta Mona, snorkel <span class="opt-a">[Manzanillo]</span></li><li>◆ Punta Mona permaculture farm <span class="opt-a">[Manzanillo]</span></li><li>■ Pita &amp; Hummus House <span class="opt-a">[Cocles]</span></li><li>■ Maxi&#39;s Restaurant (Manzanillo) <span class="opt-a">[Manzanillo]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Hike day</div>
+        <div class="opt-b">Refuge trail to Playa Bite or Punta Mona from 06:30, snorkel off the village on the way back, lunch at Moca Beach, massage late afternoon, dinner at Zaika.</div>
+        <ol class="opt-l"><li>● Gandoca-Manzanillo Wildlife Refuge trail <span class="opt-a">[Manzanillo]</span></li><li>○ DIY snorkel off Manzanillo beach <span class="opt-a">[Manzanillo]</span></li><li>■ Moca Beach Restaurant <span class="opt-a">[Manzanillo]</span></li><li>▲ Masajes Beauty Ritual Spa — couples massage <span class="opt-a">[Cocles]</span></li><li>■ Zaika Indian Cuisine Bar &amp; Grill <span class="opt-a">[Cocles]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Do both</div>
+        <div class="opt-b">Boat at 08:00, short refuge walk after lunch — be back by 15:00.</div>
+        <ol class="opt-l"><li>○ Sherman&#39;s Boat Tour — dolphins, Punta Mona, snorkel <span class="opt-a">[Manzanillo]</span></li><li>■ Moca Beach Restaurant <span class="opt-a">[Manzanillo]</span></li><li>● Gandoca-Manzanillo Wildlife Refuge trail <span class="opt-a">[Manzanillo]</span></li></ol>
+      </div>
+</section>
+
+<section class="day">
+  <h3 class="day-h"><span class="day-dow">Fri</span> <span class="day-date">Oct 9</span> <span class="day-lodge">Congo Bongo, Manzanillo</span></h3>
+  <div class="noanchor">No fixed times today — the whole day is yours.</div>
+  <div class="daywarn"><b>Watch out</b> Inland options are ~35 min from Manzanillo.</div>
+  
+      <div class="opt">
+        <div class="opt-n">Waterfall + chocolate</div>
+        <div class="opt-b">Breakfast at bread what what, Rios hand pies for the trail, Two Waters or Ma-Cu before 10:00, Cacao Trails (or the Kekoldi family), Finca la Isla in the afternoon, dinner at Grow.</div>
+        <ol class="opt-l"><li>■ bread what what <span class="opt-a">[Puerto Viejo]</span></li><li>■ Rios Vegan Food <span class="opt-a">[Puerto Viejo]</span></li><li>● Catarata Finca Two Waters <span class="opt-a">[Hone Creek / Bribri]</span></li><li>● Catarata Ma-Cu (Bribri &quot;Sparkling&quot; waterfall) <span class="opt-a">[Hone Creek / Bribri]</span></li><li>◆ Cacao Trails — Museo de Cacao <span class="opt-a">[Hone Creek / Bribri]</span></li><li>◆ Kekoldi indigenous family — cacao and exotic animals <span class="opt-a">[Hone Creek / Bribri]</span></li><li>● Finca la Isla permaculture farm and botanical garden <span class="opt-a">[Puerto Viejo]</span></li><li>■ Grow Puerto Viejo <span class="opt-a">[Puerto Viejo]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Puerto Viejo only</div>
+        <div class="opt-b">bread what what, browse town, Finca la Isla, beach at Playa Negra, dinner in town at Grow, Umi Rojo (sushi) or El Dragon — or La NENA on the way back.</div>
+        <ol class="opt-l"><li>■ bread what what <span class="opt-a">[Puerto Viejo]</span></li><li>● Finca la Isla permaculture farm and botanical garden <span class="opt-a">[Puerto Viejo]</span></li><li>■ Grow Puerto Viejo <span class="opt-a">[Puerto Viejo]</span></li><li>■ Umi Rojo Beach House (ex-Chile Rojo) <span class="opt-a">[Puerto Viejo]</span></li><li>■ Restaurante El Dragon — Asian cuisine &amp; Kung Fu Bar <span class="opt-a">[Puerto Viejo]</span></li><li>■ La NENA <span class="opt-a">[Cocles]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Stay south</div>
+        <div class="opt-b">Refuge trail or Sherman&#39;s boat if not done Thursday, Moca Beach, dinner at Maxi&#39;s.</div>
+        <ol class="opt-l"><li>● Gandoca-Manzanillo Wildlife Refuge trail <span class="opt-a">[Manzanillo]</span></li><li>○ Sherman&#39;s Boat Tour — dolphins, Punta Mona, snorkel <span class="opt-a">[Manzanillo]</span></li><li>■ Moca Beach Restaurant <span class="opt-a">[Manzanillo]</span></li><li>■ Maxi&#39;s Restaurant (Manzanillo) <span class="opt-a">[Manzanillo]</span></li></ol>
+      </div>
+</section>
+
+<section class="day">
+  <h3 class="day-h"><span class="day-dow">Sat</span> <span class="day-date">Oct 10</span> <span class="day-lodge">Congo Bongo, Manzanillo</span></h3>
+  <table class="grid anch"><tbody>
+          <tr>
+            <td class="t">07:00</td>
+            <td><b>Settle $419.51 with Congo Bongo</b> <span class="anote">Office opens 07:00. Checkout day.</span></td>
+            <td class="ph">+506 8957 4177</td>
+          </tr>
+          <tr>
+            <td class="t">15:30</td>
+            <td><b>Adobe return — Limón downtown</b> <span class="anote">Office closes 17:00. Return with a full tank.</span></td>
+            <td class="ph">+506 2758 4042</td>
+          </tr>
+          <tr>
+            <td class="t">16:15</td>
+            <td><b>Sansa check-in (LIO)</b></td>
+            <td class="ph"></td>
+          </tr>
+          <tr>
+            <td class="t">17:10</td>
+            <td><b>Sansa RZ1132 to SJO</b> <span class="anote">Alajuela City Hotel tonight.</span></td>
+            <td class="ph"></td>
+          </tr></tbody></table>
+  <div class="daywarn"><b>Watch out</b> All bags are in the car at Cahuita — paid lot at Kelly Creek, nothing visible. · Latest departure from Manzanillo direct to Limón: 13:45. · Saturday hours differ: Moca Beach closes 17:00, Rios Vegan closes 12:00.</div>
+  
+      <div class="opt">
+        <div class="opt-n">Cahuita snorkel + walk</div>
+        <div class="opt-b">Leave 07:00, snorkel at 08:15, 45 min on the coastal trail, lunch in Cahuita village, leave 13:45, Adobe by 14:45.</div>
+        <ol class="opt-l"><li>○ Cahuita National Park — reef snorkel by boat <span class="opt-a">[Cahuita]</span></li><li>● Cahuita National Park — coastal trail <span class="opt-a">[Cahuita]</span></li><li>◇ Cahuita village <span class="opt-a">[Cahuita]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Cahuita walk only</div>
+        <div class="opt-b">Refuge dawn walk 06:30–08:00, leave 08:45, coastal trail 09:45–12:30, lunch in Cahuita village, leave 13:45.</div>
+        <ol class="opt-l"><li>● Gandoca-Manzanillo Wildlife Refuge trail <span class="opt-a">[Manzanillo]</span></li><li>● Cahuita National Park — coastal trail <span class="opt-a">[Cahuita]</span></li><li>◇ Cahuita village <span class="opt-a">[Cahuita]</span></li></ol>
+      </div>
+      <div class="opt">
+        <div class="opt-n">Slow exit</div>
+        <div class="opt-b">Beach morning at Manzanillo, early lunch at Moca Beach (closes 17:00 Sat), leave 13:45 direct to Limón (1h15).</div>
+        <ol class="opt-l"><li>○ DIY snorkel off Manzanillo beach <span class="opt-a">[Manzanillo]</span></li><li>■ Moca Beach Restaurant <span class="opt-a">[Manzanillo]</span></li></ol>
+      </div>
+</section>
+</section>
+
+<section class="part" id="matrix">
+  <h2 class="part-h">Part III · What's closed today</h2>
+  <div class="legend"><b>Key</b> <span class="lg">✕ closed</span><span class="lg">✓ open, no fixed hours</span><span class="lg">? hours unknown</span><span class="lg">Sorted north to south. Trip dates under each weekday.</span></div>
+  <table class="grid matrix">
+    <thead><tr><th class="mn">Place</th><th>Mon<span class="dh">5</span></th><th>Tue<span class="dh">6</span></th><th>Wed<span class="dh">7</span></th><th>Thu<span class="dh">8</span></th><th>Fri<span class="dh">9</span></th><th>Sat<span class="dh">10</span></th><th>Sun</th></tr></thead>
+    <tbody>
+<tr class="marea"><td colspan="8">Cahuita</td></tr><tr><td class="mn">● Cahuita National Park — coastal trail</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td></tr>
+<tr><td class="mn">○ Cahuita National Park — reef snorkel…</td><td class="op">8–12</td><td class="op">8–12</td><td class="op">8–12</td><td class="op">8–12</td><td class="op">8–12</td><td class="op">8–12</td><td class="op">8–12</td></tr>
+<tr><td class="mn">◇ Cahuita village</td><td class="op">✓</td><td class="op">✓</td><td class="op">✓</td><td class="op">✓</td><td class="op">✓</td><td class="op">✓</td><td class="op">✓</td></tr>
+<tr class="marea"><td colspan="8">Hone Creek / Bribri</td></tr><tr><td class="mn">● Catarata Finca Two Waters</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td></tr>
+<tr><td class="mn">● Catarata Ma-Cu</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td></tr>
+<tr><td class="mn">◆ Cacao Trails — Museo de Cacao</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td></tr>
+<tr><td class="mn">◆ Kekoldi Reserve — chocolate…</td><td class="op">8–14</td><td class="op">8–14</td><td class="op">8–14</td><td class="op">8–14</td><td class="op">8–14</td><td class="op">8–14</td><td class="op">8–14</td></tr>
+<tr class="marea"><td colspan="8">Puerto Viejo</td></tr><tr><td class="mn">● Finca la Isla permaculture farm and…</td><td class="op">10–16</td><td class="cl">✕</td><td class="cl">✕</td><td class="cl">✕</td><td class="op">10–16</td><td class="op">10–16</td><td class="op">10–16</td></tr>
+<tr><td class="mn">■ Grow Puerto Viejo</td><td class="op">12–21</td><td class="op">12–21</td><td class="op">12–21</td><td class="op">12–21</td><td class="op">12–21</td><td class="op">12–21</td><td class="cl">✕</td></tr>
+<tr><td class="mn">■ Rios Vegan Food</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">8–16</td><td class="op">7–12</td><td class="cl">✕</td></tr>
+<tr><td class="mn">■ bread what what</td><td class="op">8–15</td><td class="cl">✕</td><td class="op">8–15</td><td class="op">8–15</td><td class="op">8–15</td><td class="op">8–16</td><td class="op">8–16</td></tr>
+<tr><td class="mn">■ Restaurante El Dragon — Asian cuisine…</td><td class="op">17–22</td><td class="op">17–22</td><td class="op">17–22</td><td class="op">17–22</td><td class="op">17–22</td><td class="op">17–22</td><td class="op">17–22</td></tr>
+<tr><td class="mn">■ Umi Rojo Beach House</td><td class="op">17–22</td><td class="cl">✕</td><td class="op">17–22</td><td class="op">17–23</td><td class="op">17–23</td><td class="op">12–23</td><td class="op">12–23</td></tr>
+<tr class="marea"><td colspan="8">Playa Chiquita</td></tr><tr><td class="mn">■ Spicy Coconut</td><td class="op">12:30–21:30</td><td class="op">12:30–21:30</td><td class="op">12:30–21:30</td><td class="op">12:30–21:30</td><td class="op">12:30–21:30</td><td class="op">12:30–21:30</td><td class="op">12:30–21:30</td></tr>
+<tr class="marea"><td colspan="8">Cocles</td></tr><tr><td class="mn">● Jaguar Rescue Center</td><td class="op">9–13</td><td class="op">9–13</td><td class="op">9–13</td><td class="op">9–13</td><td class="op">9–13</td><td class="op">9–13</td><td class="op">9–13</td></tr>
+<tr><td class="mn">▲ Masajes Beauty Ritual Spa — couples…</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td></tr>
+<tr><td class="mn">■ La NENA</td><td class="op">12–20:30</td><td class="cl">✕</td><td class="cl">✕</td><td class="op">12–20:30</td><td class="op">12–20:30</td><td class="op">12–20:30</td><td class="op">12–20:30</td></tr>
+<tr><td class="mn">■ Zaika Indian Cuisine Bar &amp; Grill</td><td class="op">12–22</td><td class="op">12–22</td><td class="op">12–22</td><td class="op">12–22</td><td class="op">12–22</td><td class="op">12–22</td><td class="cl">✕</td></tr>
+<tr><td class="mn">■ Pita &amp; Hummus House</td><td class="op">7–21</td><td class="op">7–21</td><td class="op">7–21</td><td class="op">7–21</td><td class="op">7–21</td><td class="op">7–21</td><td class="cl">✕</td></tr>
+<tr><td class="mn">■ SAGE @ Playa 506</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td><td class="op">8–21</td></tr>
+<tr class="marea"><td colspan="8">Punta Uva</td></tr><tr><td class="mn">○ Río Punta Uva kayak + sloth walk</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td><td class="op">8–17</td></tr>
+<tr><td class="mn">○ DIY snorkel at Playa Arrecife / Punta…</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td></tr>
+<tr><td class="mn">■ La Sirena</td><td class="op">11–17</td><td class="op">11–17</td><td class="op">11–17</td><td class="op">11–17</td><td class="op">11–17</td><td class="op">11–17</td><td class="cl">✕</td></tr>
+<tr class="marea"><td colspan="8">Manzanillo</td></tr><tr><td class="mn">● Gandoca-Manzanillo Wildlife Refuge…</td><td class="op">6:30–15</td><td class="op">6:30–15</td><td class="op">6:30–15</td><td class="op">6:30–15</td><td class="op">6:30–15</td><td class="op">6:30–15</td><td class="op">6:30–15</td></tr>
+<tr><td class="mn">○ Sherman&#39;s Boat Tour — dolphins, Punta…</td><td class="op">7:30–17</td><td class="op">7:30–17</td><td class="op">7:30–17</td><td class="op">7:30–17</td><td class="op">7:30–17</td><td class="op">7:30–17</td><td class="op">7:30–17</td></tr>
+<tr><td class="mn">○ DIY snorkel off Manzanillo beach</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td><td class="op">6–17:30</td></tr>
+<tr><td class="mn">■ Moca Beach Restaurant</td><td class="op">7–21</td><td class="op">7–21</td><td class="op">7–21</td><td class="op">7–21</td><td class="op">7–21</td><td class="op">9–17</td><td class="op">7–21</td></tr>
+<tr><td class="mn">■ Maxi&#39;s Restaurant</td><td class="op">11–21</td><td class="op">11–21</td><td class="op">11–21</td><td class="op">11–21</td><td class="op">11–21</td><td class="op">11–21</td><td class="op">11–21</td></tr>
+    </tbody>
+  </table>
+  <div class="matrix-foot">
+    <b>By arrangement only (no published hours):</b>
+    ◆ Punta Mona permaculture farm · ◆ Kekoldi indigenous family — cacao and exotic animals
+  </div>
+</section>
+
+<section class="part" id="notes">
+  <h2 class="part-h">Notes</h2>
+  <div class="notes-grid">
+    <div class="notes-col"><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div><div class="rule"></div></div>
+  </div>
+  <div class="colophon">
+    <div><b>The live version, always current:</b> jasonedelstein1.github.io/cractivities/</div>
+    <div class="small">Hours, prices and phone numbers were correct when this guide was generated. Call ahead on anything that matters.</div>
+  </div>
+</section>
+</div>
+</body>
+</html>
