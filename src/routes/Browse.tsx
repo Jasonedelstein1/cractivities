@@ -35,7 +35,11 @@ export function Browse() {
       <header className="page-header">
         <div className="eyebrow">Everything</div>
         <h1>Browse</h1>
-        <div className="sub">{visible.length} of {listedActivities.length} options</div>
+        <div className="sub">
+          {visible.length} of {listedActivities.length} options ·{' '}
+          <a href={`${import.meta.env.BASE_URL}guide.html`}>Printable guide</a> ·{' '}
+          <a href={`${import.meta.env.BASE_URL}guide.pdf`}>PDF</a>
+        </div>
       </header>
 
       <FilterBar />
