@@ -9,7 +9,8 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "validate": "node scripts/validate-data.mjs"
+    "validate": "node scripts/validate-data.mjs",
+    "guide": "node scripts/build-guide.mjs && node scripts/render-guide.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

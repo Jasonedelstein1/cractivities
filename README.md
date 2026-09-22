@@ -14,6 +14,7 @@ npm run dev        # http://localhost:5173/cractivities/
 npm run validate   # sanity-check activities.json + days.json
 npm run build      # typecheck + production bundle in dist/
 npm run preview    # serve dist/ with the service worker active
+npm run guide      # regenerate public/guide.html + guide.pdf from the data (needs Playwright)
 ```
 
 ## Deploy
